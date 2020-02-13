@@ -22,6 +22,10 @@
 		84115EFB23F56EE9003B09DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84115EFA23F56EE9003B09DC /* SceneDelegate.swift */; };
 		84115F0223F56EEA003B09DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84115F0123F56EEA003B09DC /* Assets.xcassets */; };
 		84115F0523F56EEA003B09DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84115F0323F56EEA003B09DC /* LaunchScreen.storyboard */; };
+		8424273423F5AF0A00E84255 /* SavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273323F5AF0A00E84255 /* SavesViewController.swift */; };
+		8424273623F5AF1400E84255 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273523F5AF1400E84255 /* RecipesViewController.swift */; };
+		8424273823F5AF1E00E84255 /* GroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273723F5AF1E00E84255 /* GroceryViewController.swift */; };
+		8424273A23F5AF2600E84255 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273923F5AF2600E84255 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		84115F0123F56EEA003B09DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84115F0423F56EEA003B09DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84115F0623F56EEA003B09DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8424273323F5AF0A00E84255 /* SavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesViewController.swift; sourceTree = "<group>"; };
+		8424273523F5AF1400E84255 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		8424273723F5AF1E00E84255 /* GroceryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryViewController.swift; sourceTree = "<group>"; };
+		8424273923F5AF2600E84255 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		D6BE983822BD6E81D1E499F4 /* Pods-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +108,7 @@
 		8402CD5223F5722C0020AFF6 /* Saves */ = {
 			isa = PBXGroup;
 			children = (
+				8424273323F5AF0A00E84255 /* SavesViewController.swift */,
 			);
 			path = Saves;
 			sourceTree = "<group>";
@@ -107,6 +116,7 @@
 		8402CD5323F572330020AFF6 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				8424273523F5AF1400E84255 /* RecipesViewController.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -114,6 +124,7 @@
 		8402CD5423F572380020AFF6 /* Grocery */ = {
 			isa = PBXGroup;
 			children = (
+				8424273723F5AF1E00E84255 /* GroceryViewController.swift */,
 			);
 			path = Grocery;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 		8402CD5523F5723F0020AFF6 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				8424273923F5AF2600E84255 /* MoreViewController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -347,11 +359,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8402CD5723F572640020AFF6 /* SignUpViewController.swift in Sources */,
+				8424273A23F5AF2600E84255 /* MoreViewController.swift in Sources */,
+				8424273423F5AF0A00E84255 /* SavesViewController.swift in Sources */,
 				8402CD6C23F591C10020AFF6 /* Utilities.swift in Sources */,
+				8424273623F5AF1400E84255 /* RecipesViewController.swift in Sources */,
 				84115EF923F56EE9003B09DC /* AppDelegate.swift in Sources */,
 				8402CD6023F57E490020AFF6 /* Colors.swift in Sources */,
 				8402CD5C23F576AF0020AFF6 /* SignUpProtocol.swift in Sources */,
 				8402CD5E23F577FE0020AFF6 /* Fonts.swift in Sources */,
+				8424273823F5AF1E00E84255 /* GroceryViewController.swift in Sources */,
 				84115EFB23F56EE9003B09DC /* SceneDelegate.swift in Sources */,
 				8402CD6823F58E100020AFF6 /* MainViewController.swift in Sources */,
 				8402CD6E23F59F750020AFF6 /* SignInViewController.swift in Sources */,

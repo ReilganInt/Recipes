@@ -34,6 +34,7 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
+        checkUserUID()
         configureView()
     }
     
@@ -50,6 +51,20 @@ class SignInViewController: UIViewController {
         setupSignUpButton()
         setupErrorLabel()
         setupStackView()
+    }
+    
+    /// Check user uid in UserDefaults
+    private func checkUserUID() {
+        let defaults = UserDefaults.standard
+        let uid = defaults.string(forKey: "UserUID")
+        
+        if uid != nil {
+            DispatchQueue.main.async {
+                let mainViewController = MainViewController()
+                mainViewController.modalPresentationStyle = .overFullScreen
+                self.present(mainViewController, animated: true, completion: nil)
+            }
+        }
     }
     
     /// Setup constraints for view
@@ -137,10 +152,7 @@ class SignInViewController: UIViewController {
             
             return "Please fill in all fields."
         }
-        
-        // Check if the password is secure
-        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+    
         return nil
     }
     
@@ -175,6 +187,9 @@ class SignInViewController: UIViewController {
                     self.showError("\(err!.localizedDescription)")
                 }
                 else {
+                    let defaults = UserDefaults.standard
+                    defaults.set(result?.user.uid, forKey: "UserUID")
+                    
                     let mainViewController = MainViewController()
                     mainViewController.modalPresentationStyle = .overFullScreen
                     self.present(mainViewController, animated: true, completion: nil)
