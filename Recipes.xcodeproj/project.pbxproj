@@ -8,9 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5010DD93CB733998B04A3479 /* Pods_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475AAB77499D99D395903320 /* Pods_Recipes.framework */; };
+		8402CD5723F572640020AFF6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD5623F572640020AFF6 /* SignUpViewController.swift */; };
+		8402CD5C23F576AF0020AFF6 /* SignUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD5B23F576AF0020AFF6 /* SignUpProtocol.swift */; };
+		8402CD5E23F577FE0020AFF6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD5D23F577FE0020AFF6 /* Fonts.swift */; };
+		8402CD6023F57E490020AFF6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD5F23F57E490020AFF6 /* Colors.swift */; };
+		8402CD6423F57EEB0020AFF6 /* Amsterdam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8402CD6323F57EEB0020AFF6 /* Amsterdam.ttf */; };
+		8402CD6623F580140020AFF6 /* Graphik-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8402CD6523F580140020AFF6 /* Graphik-regular.ttf */; };
+		8402CD6823F58E100020AFF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD6723F58E100020AFF6 /* MainViewController.swift */; };
+		8402CD6A23F58E750020AFF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8402CD6923F58E750020AFF6 /* GoogleService-Info.plist */; };
+		8402CD6C23F591C10020AFF6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD6B23F591C10020AFF6 /* Utilities.swift */; };
+		8402CD6E23F59F750020AFF6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD6D23F59F750020AFF6 /* SignInViewController.swift */; };
 		84115EF923F56EE9003B09DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84115EF823F56EE9003B09DC /* AppDelegate.swift */; };
 		84115EFB23F56EE9003B09DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84115EFA23F56EE9003B09DC /* SceneDelegate.swift */; };
-		84115EFD23F56EE9003B09DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84115EFC23F56EE9003B09DC /* ViewController.swift */; };
 		84115F0223F56EEA003B09DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84115F0123F56EEA003B09DC /* Assets.xcassets */; };
 		84115F0523F56EEA003B09DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84115F0323F56EEA003B09DC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,10 +27,19 @@
 /* Begin PBXFileReference section */
 		475AAB77499D99D395903320 /* Pods_Recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F83CA11138B40EEBE8CE8C /* Pods-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.release.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.release.xcconfig"; sourceTree = "<group>"; };
+		8402CD5623F572640020AFF6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8402CD5B23F576AF0020AFF6 /* SignUpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocol.swift; sourceTree = "<group>"; };
+		8402CD5D23F577FE0020AFF6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8402CD5F23F57E490020AFF6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8402CD6323F57EEB0020AFF6 /* Amsterdam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amsterdam.ttf; sourceTree = "<group>"; };
+		8402CD6523F580140020AFF6 /* Graphik-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-regular.ttf"; sourceTree = "<group>"; };
+		8402CD6723F58E100020AFF6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8402CD6923F58E750020AFF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8402CD6B23F591C10020AFF6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8402CD6D23F59F750020AFF6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		84115EF523F56EE9003B09DC /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84115EF823F56EE9003B09DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84115EFA23F56EE9003B09DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84115EFC23F56EE9003B09DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84115F0123F56EEA003B09DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84115F0423F56EEA003B09DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84115F0623F56EEA003B09DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,9 +58,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8402CD4E23F572140020AFF6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD5523F5723F0020AFF6 /* More */,
+				8402CD5423F572380020AFF6 /* Grocery */,
+				8402CD5323F572330020AFF6 /* Recipes */,
+				8402CD5223F5722C0020AFF6 /* Saves */,
+				8402CD5123F572280020AFF6 /* Main */,
+				8402CD5023F572220020AFF6 /* SignIn */,
+				8402CD4F23F5721B0020AFF6 /* SignUp */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8402CD4F23F5721B0020AFF6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD5623F572640020AFF6 /* SignUpViewController.swift */,
+				8402CD5B23F576AF0020AFF6 /* SignUpProtocol.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		8402CD5023F572220020AFF6 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD6D23F59F750020AFF6 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		8402CD5123F572280020AFF6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD6723F58E100020AFF6 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8402CD5223F5722C0020AFF6 /* Saves */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Saves;
+			sourceTree = "<group>";
+		};
+		8402CD5323F572330020AFF6 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		8402CD5423F572380020AFF6 /* Grocery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grocery;
+			sourceTree = "<group>";
+		};
+		8402CD5523F5723F0020AFF6 /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		8402CD5823F572730020AFF6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD5D23F577FE0020AFF6 /* Fonts.swift */,
+				8402CD5F23F57E490020AFF6 /* Colors.swift */,
+				8402CD6B23F591C10020AFF6 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8402CD6123F57EB80020AFF6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD6223F57EC70020AFF6 /* Fonts */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8402CD6223F57EC70020AFF6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD6323F57EEB0020AFF6 /* Amsterdam.ttf */,
+				8402CD6523F580140020AFF6 /* Graphik-regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		84115EEC23F56EE9003B09DC = {
 			isa = PBXGroup;
 			children = (
+				8402CD6123F57EB80020AFF6 /* Common */,
 				84115EF723F56EE9003B09DC /* Recipes */,
 				84115EF623F56EE9003B09DC /* Products */,
 				C582C0F5FD58DADD98DF2AA0 /* Pods */,
@@ -61,14 +174,24 @@
 		84115EF723F56EE9003B09DC /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				84115EF823F56EE9003B09DC /* AppDelegate.swift */,
-				84115EFA23F56EE9003B09DC /* SceneDelegate.swift */,
-				84115EFC23F56EE9003B09DC /* ViewController.swift */,
+				8402CD5823F572730020AFF6 /* Helpers */,
+				8402CD4E23F572140020AFF6 /* Modules */,
+				84115F0C23F570A0003B09DC /* Supporting Files */,
 				84115F0123F56EEA003B09DC /* Assets.xcassets */,
-				84115F0323F56EEA003B09DC /* LaunchScreen.storyboard */,
-				84115F0623F56EEA003B09DC /* Info.plist */,
 			);
 			path = Recipes;
+			sourceTree = "<group>";
+		};
+		84115F0C23F570A0003B09DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD6923F58E750020AFF6 /* GoogleService-Info.plist */,
+				84115F0623F56EEA003B09DC /* Info.plist */,
+				84115EF823F56EE9003B09DC /* AppDelegate.swift */,
+				84115EFA23F56EE9003B09DC /* SceneDelegate.swift */,
+				84115F0323F56EEA003B09DC /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C582C0F5FD58DADD98DF2AA0 /* Pods */ = {
@@ -149,8 +272,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8402CD6A23F58E750020AFF6 /* GoogleService-Info.plist in Resources */,
+				8402CD6623F580140020AFF6 /* Graphik-regular.ttf in Resources */,
 				84115F0523F56EEA003B09DC /* LaunchScreen.storyboard in Resources */,
 				84115F0223F56EEA003B09DC /* Assets.xcassets in Resources */,
+				8402CD6423F57EEB0020AFF6 /* Amsterdam.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +346,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84115EFD23F56EE9003B09DC /* ViewController.swift in Sources */,
+				8402CD5723F572640020AFF6 /* SignUpViewController.swift in Sources */,
+				8402CD6C23F591C10020AFF6 /* Utilities.swift in Sources */,
 				84115EF923F56EE9003B09DC /* AppDelegate.swift in Sources */,
+				8402CD6023F57E490020AFF6 /* Colors.swift in Sources */,
+				8402CD5C23F576AF0020AFF6 /* SignUpProtocol.swift in Sources */,
+				8402CD5E23F577FE0020AFF6 /* Fonts.swift in Sources */,
 				84115EFB23F56EE9003B09DC /* SceneDelegate.swift in Sources */,
+				8402CD6823F58E100020AFF6 /* MainViewController.swift in Sources */,
+				8402CD6E23F59F750020AFF6 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
