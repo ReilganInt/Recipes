@@ -14,7 +14,6 @@
 		8402CD6023F57E490020AFF6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD5F23F57E490020AFF6 /* Colors.swift */; };
 		8402CD6423F57EEB0020AFF6 /* Amsterdam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8402CD6323F57EEB0020AFF6 /* Amsterdam.ttf */; };
 		8402CD6623F580140020AFF6 /* Graphik-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8402CD6523F580140020AFF6 /* Graphik-regular.ttf */; };
-		8402CD6823F58E100020AFF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD6723F58E100020AFF6 /* MainViewController.swift */; };
 		8402CD6A23F58E750020AFF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8402CD6923F58E750020AFF6 /* GoogleService-Info.plist */; };
 		8402CD6C23F591C10020AFF6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD6B23F591C10020AFF6 /* Utilities.swift */; };
 		8402CD6E23F59F750020AFF6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402CD6D23F59F750020AFF6 /* SignInViewController.swift */; };
@@ -26,6 +25,21 @@
 		8424273623F5AF1400E84255 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273523F5AF1400E84255 /* RecipesViewController.swift */; };
 		8424273823F5AF1E00E84255 /* GroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273723F5AF1E00E84255 /* GroceryViewController.swift */; };
 		8424273A23F5AF2600E84255 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424273923F5AF2600E84255 /* MoreViewController.swift */; };
+		8450EE4823F69F0A005EF7E4 /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE4023F69F09005EF7E4 /* BubbleTabBar.swift */; };
+		8450EE4A23F69F0A005EF7E4 /* BubbleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE4223F69F09005EF7E4 /* BubbleTabBarController.swift */; };
+		8450EE4B23F69F0A005EF7E4 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE4323F69F09005EF7E4 /* CBTabBarButton.swift */; };
+		8450EE5023F69FD0005EF7E4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8450EE4F23F69FD0005EF7E4 /* LICENSE */; };
+		8450EE5923F6A296005EF7E4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE5823F6A296005EF7E4 /* SignUpView.swift */; };
+		8450EE6D23F6B7C5005EF7E4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE6C23F6B7C5005EF7E4 /* TextField.swift */; };
+		8450EE7123F6B80D005EF7E4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE7023F6B80D005EF7E4 /* SignInView.swift */; };
+		8450EE7323F6B96E005EF7E4 /* SignInProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450EE7223F6B96E005EF7E4 /* SignInProtocol.swift */; };
+		84BDCC6B23F6BF4F0090E04E /* UnitBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC6523F6BF4F0090E04E /* UnitBezier.swift */; };
+		84BDCC6C23F6BF4F0090E04E /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC6623F6BF4F0090E04E /* TimingFunction.swift */; };
+		84BDCC6D23F6BF4F0090E04E /* FluidCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC6723F6BF4F0090E04E /* FluidCardView.swift */; };
+		84BDCC6E23F6BF4F0090E04E /* ExpandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC6823F6BF4F0090E04E /* ExpandButton.swift */; };
+		84BDCC6F23F6BF4F0090E04E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC6A23F6BF4F0090E04E /* Extensions.swift */; };
+		84BDCC7823F6C6010090E04E /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BDCC7623F6C6010090E04E /* TopView.xib */; };
+		84BDCC7A23F6D16A0090E04E /* BottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BDCC7923F6D16A0090E04E /* BottomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +51,6 @@
 		8402CD5F23F57E490020AFF6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8402CD6323F57EEB0020AFF6 /* Amsterdam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amsterdam.ttf; sourceTree = "<group>"; };
 		8402CD6523F580140020AFF6 /* Graphik-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-regular.ttf"; sourceTree = "<group>"; };
-		8402CD6723F58E100020AFF6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8402CD6923F58E750020AFF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8402CD6B23F591C10020AFF6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8402CD6D23F59F750020AFF6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +64,21 @@
 		8424273523F5AF1400E84255 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		8424273723F5AF1E00E84255 /* GroceryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryViewController.swift; sourceTree = "<group>"; };
 		8424273923F5AF2600E84255 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		8450EE4023F69F09005EF7E4 /* BubbleTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTabBar.swift; sourceTree = "<group>"; };
+		8450EE4223F69F09005EF7E4 /* BubbleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTabBarController.swift; sourceTree = "<group>"; };
+		8450EE4323F69F09005EF7E4 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabBarButton.swift; sourceTree = "<group>"; };
+		8450EE4F23F69FD0005EF7E4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8450EE5823F6A296005EF7E4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8450EE6C23F6B7C5005EF7E4 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		8450EE7023F6B80D005EF7E4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8450EE7223F6B96E005EF7E4 /* SignInProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocol.swift; sourceTree = "<group>"; };
+		84BDCC6523F6BF4F0090E04E /* UnitBezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitBezier.swift; sourceTree = "<group>"; };
+		84BDCC6623F6BF4F0090E04E /* TimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
+		84BDCC6723F6BF4F0090E04E /* FluidCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidCardView.swift; sourceTree = "<group>"; };
+		84BDCC6823F6BF4F0090E04E /* ExpandButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandButton.swift; sourceTree = "<group>"; };
+		84BDCC6A23F6BF4F0090E04E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84BDCC7623F6C6010090E04E /* TopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
+		84BDCC7923F6D16A0090E04E /* BottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomView.xib; sourceTree = "<group>"; };
 		D6BE983822BD6E81D1E499F4 /* Pods-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,11 +97,12 @@
 		8402CD4E23F572140020AFF6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				84BDCC6323F6BF4F0090E04E /* FluidCard */,
+				8450EE3E23F69F09005EF7E4 /* BubbleTabBar */,
 				8402CD5523F5723F0020AFF6 /* More */,
 				8402CD5423F572380020AFF6 /* Grocery */,
 				8402CD5323F572330020AFF6 /* Recipes */,
 				8402CD5223F5722C0020AFF6 /* Saves */,
-				8402CD5123F572280020AFF6 /* Main */,
 				8402CD5023F572220020AFF6 /* SignIn */,
 				8402CD4F23F5721B0020AFF6 /* SignUp */,
 			);
@@ -83,8 +112,9 @@
 		8402CD4F23F5721B0020AFF6 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				8402CD5623F572640020AFF6 /* SignUpViewController.swift */,
 				8402CD5B23F576AF0020AFF6 /* SignUpProtocol.swift */,
+				8450EE5623F6A272005EF7E4 /* View */,
+				8450EE5723F6A279005EF7E4 /* ViewController */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -92,17 +122,11 @@
 		8402CD5023F572220020AFF6 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				8402CD6D23F59F750020AFF6 /* SignInViewController.swift */,
+				8450EE7223F6B96E005EF7E4 /* SignInProtocol.swift */,
+				8450EE6F23F6B7F0005EF7E4 /* View */,
+				8450EE6E23F6B7E7005EF7E4 /* ViewController */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		8402CD5123F572280020AFF6 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				8402CD6723F58E100020AFF6 /* MainViewController.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		8402CD5223F5722C0020AFF6 /* Saves */ = {
@@ -132,6 +156,7 @@
 		8402CD5523F5723F0020AFF6 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				84BDCC7023F6C5990090E04E /* Xibs */,
 				8424273923F5AF2600E84255 /* MoreViewController.swift */,
 			);
 			path = More;
@@ -150,6 +175,8 @@
 		8402CD6123F57EB80020AFF6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8450EE6B23F6B7AF005EF7E4 /* Classes */,
+				8450EE4E23F69FC3005EF7E4 /* Licenses */,
 				8402CD6223F57EC70020AFF6 /* Fonts */,
 			);
 			path = Common;
@@ -204,6 +231,117 @@
 				84115F0323F56EEA003B09DC /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8450EE3E23F69F09005EF7E4 /* BubbleTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE5523F6A25B005EF7E4 /* View */,
+				8450EE5423F6A24D005EF7E4 /* ViewController */,
+			);
+			path = BubbleTabBar;
+			sourceTree = "<group>";
+		};
+		8450EE4E23F69FC3005EF7E4 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE4F23F69FD0005EF7E4 /* LICENSE */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		8450EE5423F6A24D005EF7E4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE4223F69F09005EF7E4 /* BubbleTabBarController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8450EE5523F6A25B005EF7E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE4023F69F09005EF7E4 /* BubbleTabBar.swift */,
+				8450EE4323F69F09005EF7E4 /* CBTabBarButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8450EE5623F6A272005EF7E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE5823F6A296005EF7E4 /* SignUpView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8450EE5723F6A279005EF7E4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD5623F572640020AFF6 /* SignUpViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8450EE6B23F6B7AF005EF7E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE6C23F6B7C5005EF7E4 /* TextField.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8450EE6E23F6B7E7005EF7E4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8402CD6D23F59F750020AFF6 /* SignInViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8450EE6F23F6B7F0005EF7E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8450EE7023F6B80D005EF7E4 /* SignInView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84BDCC6323F6BF4F0090E04E /* FluidCard */ = {
+			isa = PBXGroup;
+			children = (
+				84BDCC6423F6BF4F0090E04E /* TimingFunctions */,
+				84BDCC6723F6BF4F0090E04E /* FluidCardView.swift */,
+				84BDCC6823F6BF4F0090E04E /* ExpandButton.swift */,
+				84BDCC6923F6BF4F0090E04E /* Extensions */,
+			);
+			path = FluidCard;
+			sourceTree = "<group>";
+		};
+		84BDCC6423F6BF4F0090E04E /* TimingFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				84BDCC6523F6BF4F0090E04E /* UnitBezier.swift */,
+				84BDCC6623F6BF4F0090E04E /* TimingFunction.swift */,
+			);
+			path = TimingFunctions;
+			sourceTree = "<group>";
+		};
+		84BDCC6923F6BF4F0090E04E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84BDCC6A23F6BF4F0090E04E /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84BDCC7023F6C5990090E04E /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				84BDCC7623F6C6010090E04E /* TopView.xib */,
+				84BDCC7923F6D16A0090E04E /* BottomView.xib */,
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 		C582C0F5FD58DADD98DF2AA0 /* Pods */ = {
@@ -286,9 +424,12 @@
 			files = (
 				8402CD6A23F58E750020AFF6 /* GoogleService-Info.plist in Resources */,
 				8402CD6623F580140020AFF6 /* Graphik-regular.ttf in Resources */,
+				84BDCC7823F6C6010090E04E /* TopView.xib in Resources */,
 				84115F0523F56EEA003B09DC /* LaunchScreen.storyboard in Resources */,
+				8450EE5023F69FD0005EF7E4 /* LICENSE in Resources */,
 				84115F0223F56EEA003B09DC /* Assets.xcassets in Resources */,
 				8402CD6423F57EEB0020AFF6 /* Amsterdam.ttf in Resources */,
+				84BDCC7A23F6D16A0090E04E /* BottomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,18 +499,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8450EE7123F6B80D005EF7E4 /* SignInView.swift in Sources */,
 				8402CD5723F572640020AFF6 /* SignUpViewController.swift in Sources */,
 				8424273A23F5AF2600E84255 /* MoreViewController.swift in Sources */,
 				8424273423F5AF0A00E84255 /* SavesViewController.swift in Sources */,
+				8450EE7323F6B96E005EF7E4 /* SignInProtocol.swift in Sources */,
 				8402CD6C23F591C10020AFF6 /* Utilities.swift in Sources */,
 				8424273623F5AF1400E84255 /* RecipesViewController.swift in Sources */,
+				84BDCC6C23F6BF4F0090E04E /* TimingFunction.swift in Sources */,
 				84115EF923F56EE9003B09DC /* AppDelegate.swift in Sources */,
+				84BDCC6E23F6BF4F0090E04E /* ExpandButton.swift in Sources */,
+				84BDCC6B23F6BF4F0090E04E /* UnitBezier.swift in Sources */,
+				8450EE6D23F6B7C5005EF7E4 /* TextField.swift in Sources */,
+				84BDCC6D23F6BF4F0090E04E /* FluidCardView.swift in Sources */,
 				8402CD6023F57E490020AFF6 /* Colors.swift in Sources */,
+				8450EE4A23F69F0A005EF7E4 /* BubbleTabBarController.swift in Sources */,
 				8402CD5C23F576AF0020AFF6 /* SignUpProtocol.swift in Sources */,
 				8402CD5E23F577FE0020AFF6 /* Fonts.swift in Sources */,
+				8450EE4823F69F0A005EF7E4 /* BubbleTabBar.swift in Sources */,
 				8424273823F5AF1E00E84255 /* GroceryViewController.swift in Sources */,
+				84BDCC6F23F6BF4F0090E04E /* Extensions.swift in Sources */,
+				8450EE5923F6A296005EF7E4 /* SignUpView.swift in Sources */,
+				8450EE4B23F69F0A005EF7E4 /* CBTabBarButton.swift in Sources */,
 				84115EFB23F56EE9003B09DC /* SceneDelegate.swift in Sources */,
-				8402CD6823F58E100020AFF6 /* MainViewController.swift in Sources */,
 				8402CD6E23F59F750020AFF6 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

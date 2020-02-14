@@ -24,7 +24,7 @@ class FluidCardView: UIView {
     private var topHeight: CGFloat = 264
     private var gap: CGFloat = 47
     private var bottomHeight: CGFloat = 134
-    private var contentWidth: CGFloat = 295
+    private var contentWidth: CGFloat = 310
     private var topContentInset: CGFloat = 32
     private var bottomContentInset: CGFloat = 10
 
@@ -34,7 +34,7 @@ class FluidCardView: UIView {
         let view = UIView()
         view.layer.cornerRadius = cornerRadius
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        view.backgroundColor = #colorLiteral(red: 0.3725490196, green: 0.01568627451, blue: 1, alpha: 1)
+        view.backgroundColor = Colors.backgroundCards
         return view
     }()
 
@@ -42,13 +42,13 @@ class FluidCardView: UIView {
         let view = UIView()
         view.layer.cornerRadius = cornerRadius
         view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        view.backgroundColor = #colorLiteral(red: 0.3725490196, green: 0.01568627451, blue: 1, alpha: 1)
+        view.backgroundColor = Colors.backgroundCards
         return view
     }()
 
     private lazy var overlay: UIView = {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.3725490196, green: 0.01568627451, blue: 1, alpha: 1)
+        view.backgroundColor = Colors.backgroundCards
         view.layer.cornerRadius = cornerRadius
         view.isHidden = true
         return view

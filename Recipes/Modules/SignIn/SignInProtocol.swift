@@ -6,4 +6,12 @@
 //  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+/// SignUpView Delegate
+protocol SignInViewDelegate {
+    // This will be implemented in the ViewController.
+    func signInButtonClicked()
+    func signUpButtonClicked()
+    func showError(_ message: String)
+}

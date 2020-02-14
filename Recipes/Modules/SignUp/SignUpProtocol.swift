@@ -11,11 +11,7 @@ import UIKit
 /// SignUpView Delegate
 protocol SignUpViewDelegate {
     // This will be implemented in the ViewController.
-    
-}
-
-/// SignUpView Data Source
-protocol SignUpViewDataSource {
-    // This will be implemented in the Module View.
-    
+    func signUpButtonClicked()
+    func backButtonClicked()
+    func showError(_ message: String)
 }

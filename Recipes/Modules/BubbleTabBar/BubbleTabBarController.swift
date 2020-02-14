@@ -42,7 +42,7 @@ open class BubbleTabBarController: UITabBarController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         let tabBar = BubbleTabBar()
-//        tabBar.tintColor = Colors.Button.Background.defaultColor
+        tabBar.tintColor = Colors.accent
         self.setValue(tabBar, forKey: "tabBar")
         configureViewControllers()
     }

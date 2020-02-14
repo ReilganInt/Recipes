@@ -66,6 +66,7 @@ open class BubbleTabBar: UITabBar {
         backgroundColor = UIColor.white
         isTranslucent = false
         barTintColor = UIColor.white
+        // MARK: CHANGE COLOR HERE
         tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.431372549, alpha: 1)
         addSubview(container)
         container.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
