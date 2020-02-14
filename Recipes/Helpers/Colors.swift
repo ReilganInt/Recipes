@@ -9,16 +9,11 @@
 import UIKit
 
 enum Colors {
-    enum Button {
-        enum Background {
-            static let defaultColor = UIColor(red: 221/255, green: 221/255, blue: 229/255, alpha: 1)
-        }
-        enum Title {
-            static let defaultColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
-            static let backColor = UIColor(red: 209/255, green: 211/255, blue: 212/255, alpha: 1)
-        }
-    }
-    enum Label {
-        static let error = UIColor(red: 255/255, green: 1/255, blue: 1/255, alpha: 1)
-    }
+    
+    static let backgroundPage = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+    static let backgroundCards = UIColor(red: 244/255, green: 244/255, blue: 248/255, alpha: 1)
+    static let accent = UIColor(red: 47/255, green: 49/255, blue: 56/255, alpha: 1)
+    static let active = UIColor(red: 221/255, green: 221/255, blue: 229/255, alpha: 1)
+    static let error = UIColor(red: 238/255, green: 61/255, blue: 72/255, alpha: 1)
+   
 }
