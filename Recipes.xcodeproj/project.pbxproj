@@ -40,6 +40,7 @@
 		84BDCC6F23F6BF4F0090E04E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC6A23F6BF4F0090E04E /* Extensions.swift */; };
 		84BDCC7823F6C6010090E04E /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BDCC7623F6C6010090E04E /* TopView.xib */; };
 		84BDCC7A23F6D16A0090E04E /* BottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BDCC7923F6D16A0090E04E /* BottomView.xib */; };
+		84BDCC7F23FAAEDD0090E04E /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDCC7E23FAAEDD0090E04E /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		84BDCC6A23F6BF4F0090E04E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		84BDCC7623F6C6010090E04E /* TopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
 		84BDCC7923F6D16A0090E04E /* BottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomView.xib; sourceTree = "<group>"; };
+		84BDCC7E23FAAEDD0090E04E /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		D6BE983822BD6E81D1E499F4 /* Pods-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 		8402CD5323F572330020AFF6 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				84BDCC7D23FAAEC00090E04E /* View */,
 				8424273523F5AF1400E84255 /* RecipesViewController.swift */,
 			);
 			path = Recipes;
@@ -344,6 +347,14 @@
 			name = Xibs;
 			sourceTree = "<group>";
 		};
+		84BDCC7D23FAAEC00090E04E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BDCC7E23FAAEDD0090E04E /* CustomSegmentedControl.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		C582C0F5FD58DADD98DF2AA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +533,7 @@
 				8450EE5923F6A296005EF7E4 /* SignUpView.swift in Sources */,
 				8450EE4B23F69F0A005EF7E4 /* CBTabBarButton.swift in Sources */,
 				84115EFB23F56EE9003B09DC /* SceneDelegate.swift in Sources */,
+				84BDCC7F23FAAEDD0090E04E /* CustomSegmentedControl.swift in Sources */,
 				8402CD6E23F59F750020AFF6 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,9 +8,9 @@ target 'Recipes' do
   # Pods for Recipes
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'  
-  	pod 'GoogleSignIn'
-  	pod 'Firebase/Core'
-  	pod 'Firebase/Firestore'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'Alamofire', '~> 5.0.0-rc.3'
 end
