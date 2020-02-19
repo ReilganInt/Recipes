@@ -36,6 +36,7 @@ final class DataCoordinator {
         }
      */
     
+    /// write
     static func performBackgroundTask(_ block: @escaping (NSManagedObjectContext) -> (Void)) {
         DataCoordinator.sharedInstance().container.performBackgroundTask(block)
     }
@@ -48,7 +49,26 @@ final class DataCoordinator {
          }
      }
      */
+    
+    /// read
     static func performViewtask(_ block: @escaping (NSManagedObjectContext) -> (Void)) {
         block(DataCoordinator.sharedInstance().container.viewContext)
+    }
+    
+    static func getAllRecipes(comletionHandler: @escaping (Result<[Recipe], Error>) -> ()) -> [Recipe] {
+        var result: [Recipe] = []
+        DispatchQueue.main.async {
+            DataCoordinator.performViewtask { (context) in
+                let recipeFR: NSFetchRequest<Recipe> = Recipe.fetchRequest()
+                do {
+                    recipeFR.returnsObjectsAsFaults = false
+                    result = try context.fetch(recipeFR)
+                    comletionHandler(.success(result))
+                } catch {
+                    comletionHandler(.failure(error))
+                }
+            }
+        }
+        return result
     }
 }

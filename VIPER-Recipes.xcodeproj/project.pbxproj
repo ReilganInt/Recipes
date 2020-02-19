@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */; };
 		84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3923FD4F2400AB40A4 /* Recipes.xcdatamodeld */; };
+		84216C6123FD68AF00AB40A4 /* NewRecipePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5B23FD68AF00AB40A4 /* NewRecipePresenter.swift */; };
+		84216C6223FD68AF00AB40A4 /* NewRecipeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5C23FD68AF00AB40A4 /* NewRecipeRouter.swift */; };
+		84216C6323FD68AF00AB40A4 /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5D23FD68AF00AB40A4 /* NewRecipeViewController.swift */; };
+		84216C6423FD68AF00AB40A4 /* NewRecipeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5E23FD68AF00AB40A4 /* NewRecipeProtocols.swift */; };
+		84216C6523FD68AF00AB40A4 /* NewRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5F23FD68AF00AB40A4 /* NewRecipeInteractor.swift */; };
+		84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */; };
 		8485845623FC242B00D190AF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845523FC242B00D190AF /* SignUpView.swift */; };
 		8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845923FC28C700D190AF /* MainTabBarController.swift */; };
 		8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845B23FC290C00D190AF /* MainTabBar.swift */; };
@@ -71,6 +77,12 @@
 		1E3721F60195917722F9E76A /* Pods-VIPER-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.release.xcconfig"; sourceTree = "<group>"; };
 		84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCoordinator.swift; sourceTree = "<group>"; };
 		84216C3A23FD4F2400AB40A4 /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
+		84216C5B23FD68AF00AB40A4 /* NewRecipePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipePresenter.swift; sourceTree = "<group>"; };
+		84216C5C23FD68AF00AB40A4 /* NewRecipeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeRouter.swift; sourceTree = "<group>"; };
+		84216C5D23FD68AF00AB40A4 /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
+		84216C5E23FD68AF00AB40A4 /* NewRecipeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeProtocols.swift; sourceTree = "<group>"; };
+		84216C5F23FD68AF00AB40A4 /* NewRecipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeInteractor.swift; sourceTree = "<group>"; };
+		84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeConfigurator.swift; sourceTree = "<group>"; };
 		8485845523FC242B00D190AF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8485845923FC28C700D190AF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8485845B23FC290C00D190AF /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -190,6 +202,19 @@
 				84216C3923FD4F2400AB40A4 /* Recipes.xcdatamodeld */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		84216C3C23FD658300AB40A4 /* NewRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				84216C5B23FD68AF00AB40A4 /* NewRecipePresenter.swift */,
+				84216C5C23FD68AF00AB40A4 /* NewRecipeRouter.swift */,
+				84216C5D23FD68AF00AB40A4 /* NewRecipeViewController.swift */,
+				84216C5E23FD68AF00AB40A4 /* NewRecipeProtocols.swift */,
+				84216C5F23FD68AF00AB40A4 /* NewRecipeInteractor.swift */,
+				84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */,
+			);
+			path = NewRecipe;
 			sourceTree = "<group>";
 		};
 		8485844E23FC23ED00D190AF /* Configurator */ = {
@@ -399,6 +424,7 @@
 		84C74C6423FBFB8F00AB519F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				84216C3C23FD658300AB40A4 /* NewRecipe */,
 				8485846223FC2B1000D190AF /* More */,
 				8485846123FC2B0A00D190AF /* Grocery */,
 				8485846023FC2B0200D190AF /* Recipes */,
@@ -649,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8485849B23FC2EFB00D190AF /* MoreViewController.swift in Sources */,
+				84216C6523FD68AF00AB40A4 /* NewRecipeInteractor.swift in Sources */,
 				84C74CB823FC0CD700AB519F /* LogInPresenter.swift in Sources */,
 				8485848223FC2EDF00D190AF /* GroceryRouter.swift in Sources */,
 				84C74CBA23FC0CD700AB519F /* LogInViewController.swift in Sources */,
@@ -663,7 +690,9 @@
 				8485846E23FC2EC200D190AF /* SavesConfigurator.swift in Sources */,
 				8485848623FC2EDF00D190AF /* GroceryConfigurator.swift in Sources */,
 				8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */,
+				84216C6223FD68AF00AB40A4 /* NewRecipeRouter.swift in Sources */,
 				84C74C8523FC03CF00AB519F /* Colors.swift in Sources */,
+				84216C6423FD68AF00AB40A4 /* NewRecipeProtocols.swift in Sources */,
 				8485849D23FC2EFB00D190AF /* MoreInteractor.swift in Sources */,
 				84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */,
 				84C74C8723FC03CF00AB519F /* Utilities.swift in Sources */,
@@ -688,7 +717,10 @@
 				84C74C4123FBF98E00AB519F /* AppDelegate.swift in Sources */,
 				84C74CC123FC0D7100AB519F /* LogInView.swift in Sources */,
 				8485846C23FC2EC200D190AF /* SavesProtocols.swift in Sources */,
+				84216C6323FD68AF00AB40A4 /* NewRecipeViewController.swift in Sources */,
 				8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */,
+				84216C6123FD68AF00AB40A4 /* NewRecipePresenter.swift in Sources */,
+				84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */,
 				8485846D23FC2EC200D190AF /* SavesInteractor.swift in Sources */,
 				84C74CBC23FC0CD700AB519F /* LogInInteractor.swift in Sources */,
 				84C74C4323FBF98E00AB519F /* SceneDelegate.swift in Sources */,
