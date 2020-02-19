@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>355020162948-o2noqg10dfeo97pn14j6p5gg5j1loduf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.355020162948-o2noqg10dfeo97pn14j6p5gg5j1loduf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWOJ1Jy4Bj2165bGB_YP8ow7J-NXA6SG8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>355020162948</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rinatkutuev.self.junior.VIPER-Recipes</string>
+	<key>PROJECT_ID</key>
+	<string>viper-recipes</string>
+	<key>STORAGE_BUCKET</key>
+	<string>viper-recipes.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:355020162948:ios:d1eb4d3132d9d939b27fd1</string>
+	<key>DATABASE_URL</key>
+	<string>https://viper-recipes.firebaseio.com</string>
+</dict>
+</plist>
