@@ -1,4 +1,4 @@
-framework module Pods_VIPER_Recipes {
+module Pods_VIPER_Recipes {
   umbrella header "Pods-VIPER-Recipes-umbrella.h"
 
   export *

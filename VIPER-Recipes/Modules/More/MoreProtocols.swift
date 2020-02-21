@@ -40,3 +40,6 @@ protocol MoreViewProtocol: class {
 
     /* Presenter -> ViewController */
 }
+
+protocol MoreViewDelegate: class {
+}

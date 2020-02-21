@@ -55,7 +55,7 @@ final class DataCoordinator {
         block(DataCoordinator.sharedInstance().container.viewContext)
     }
     
-    static func getAllRecipes(comletionHandler: @escaping (Result<[Recipe], Error>) -> ()) -> [Recipe] {
+    static func getAllRecipes(comletionHandler: @escaping (Result<[Recipe], Error>) -> ()){
         var result: [Recipe] = []
         DispatchQueue.main.async {
             DataCoordinator.performViewtask { (context) in
@@ -69,6 +69,5 @@ final class DataCoordinator {
                 }
             }
         }
-        return result
     }
 }

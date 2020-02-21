@@ -20,7 +20,7 @@ class SavesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Saves"
-        dataCache = DataCoordinator.getAllRecipes() { result in
+        DataCoordinator.getAllRecipes() { result in
             switch result {
             case .failure(let error):
                 print(error.localizedDescription)
@@ -39,12 +39,12 @@ class SavesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SavesLocalCell.id, for: indexPath)
-        
+        (cell as? SavesLocalCell)?.nameLabel.text = dataCache[indexPath.row].name
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        15
+        dataCache.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -70,4 +70,11 @@ extension SavesViewController: UICollectionViewDelegateFlowLayout {
 
 extension SavesViewController: SavesViewProtocol {
     
+}
+
+extension SavesViewController: NewRecipeViewControllerDelegate {
+    func didAddNewRecipe() {
+        collectionView.reloadData()
+    }
+
 }

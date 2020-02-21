@@ -9,13 +9,56 @@
 //
 
 import UIKit
+import Firebase
 
 class MoreViewController: UIViewController, MoreViewProtocol {
 
 	var presenter: MorePresenterProtocol?
 
-	override func viewDidLoad() {
-        super.viewDidLoad()
+    var ui: MoreView? = nil
+    
+    
+    
+    override func loadView() {
+        super.loadView()
+        ui = MoreView()
+       
     }
 
+	override func viewDidLoad() {
+        super.viewDidLoad()
+        ui?.delegate = self
+        view = ui
+        
+        let logoutButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(logout))
+        navigationItem.rightBarButtonItem = logoutButton
+    }
+    
+    @objc private func logout() {
+        
+        let logoutAction = UIAlertAction(title: "EXIT", style: .destructive, handler: { action in
+            
+            do {
+                try Auth.auth().signOut()
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+            let defaults = UserDefaults.standard
+            defaults.removeObject(forKey: "UserUID")
+            
+            self.dismiss(animated: true, completion: nil)
+            
+        })
+        
+        let cancelAction = UIAlertAction(title: "back", style: .cancel, handler: nil)
+        
+        AlertService.showAlert(style: .actionSheet, title: "Logout", message: "Do you realy want to exit?", actions: [logoutAction, cancelAction], completion: nil)
+    
+    }
+
+}
+
+extension MoreViewController: MoreViewDelegate {
+    
 }

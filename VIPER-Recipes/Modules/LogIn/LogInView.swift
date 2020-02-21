@@ -62,7 +62,7 @@ class LogInView: UIView {
     private func setupConstraints() {
         // Add constraints to subviews
         logotypeLabel.snp.makeConstraints({ make in
-            make.top.equalTo(200)
+            make.top.equalTo(bounds.height / 4)
             make.centerX.equalToSuperview()
         })
         emailTextField.snp.makeConstraints { make in
@@ -82,7 +82,7 @@ class LogInView: UIView {
             make.height.equalTo(50)
         }
         stackView.snp.makeConstraints({ make in
-            make.top.equalTo(400)
+            make.top.equalTo(logotypeLabel.snp.bottom)
             make.centerX.equalToSuperview()
         })
     }

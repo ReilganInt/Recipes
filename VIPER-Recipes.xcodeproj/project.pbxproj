@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50D27D71C5F0D60DD7B804FB /* libPods-VIPER-Recipes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA4C22A005D92F4AC4B546F /* libPods-VIPER-Recipes.a */; };
+		840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BF6CB23FFF37400E9D734 /* MoreView.swift */; };
 		84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */; };
 		84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3923FD4F2400AB40A4 /* Recipes.xcdatamodeld */; };
 		84216C6123FD68AF00AB40A4 /* NewRecipePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5B23FD68AF00AB40A4 /* NewRecipePresenter.swift */; };
@@ -15,6 +17,7 @@
 		84216C6423FD68AF00AB40A4 /* NewRecipeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5E23FD68AF00AB40A4 /* NewRecipeProtocols.swift */; };
 		84216C6523FD68AF00AB40A4 /* NewRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5F23FD68AF00AB40A4 /* NewRecipeInteractor.swift */; };
 		84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */; };
+		8478B04C23FEBF2E00E17A9C /* (null) in CopyFiles */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8485845623FC242B00D190AF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845523FC242B00D190AF /* SignUpView.swift */; };
 		8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845923FC28C700D190AF /* MainTabBarController.swift */; };
 		8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845B23FC290C00D190AF /* MainTabBar.swift */; };
@@ -69,12 +72,59 @@
 		84C74CCB23FC17DE00AB519F /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC523FC17DE00AB519F /* SignUpProtocols.swift */; };
 		84C74CCC23FC17DE00AB519F /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC623FC17DE00AB519F /* SignUpInteractor.swift */; };
 		84C74CCD23FC17DE00AB519F /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC723FC17DE00AB519F /* SignUpConfigurator.swift */; };
-		F5F2849F6BE8F74A90A85EC6 /* Pods_VIPER_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9D06C535A088C6F07F466E /* Pods_VIPER_Recipes.framework */; };
+		84D14E3F23FEB4AD00B28A2F /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E9802723FEA7D2004E8FF0 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9802623FEA7D2004E8FF0 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8409679B23FEAE710073D9C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84D14E3F23FEB4AD00B28A2F /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D14E4C23FEB64A00B28A2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8478B04C23FEBF2E00E17A9C /* (null) in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1A9D06C535A088C6F07F466E /* Pods_VIPER_Recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_Recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E3721F60195917722F9E76A /* Pods-VIPER-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.release.xcconfig"; sourceTree = "<group>"; };
+		597F2D5B52C1DF75FDA3B71A /* Pods-VIPER-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		617800EF2497EC890E7C332F /* Pods-VIPER-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.release.xcconfig"; sourceTree = "<group>"; };
+		6EA4C22A005D92F4AC4B546F /* libPods-VIPER-Recipes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-Recipes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409675D23FEADFC0073D9C0 /* absl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = absl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409675E23FEADFC0073D9C0 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409675F23FEADFC0073D9C0 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676023FEADFC0073D9C0 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676123FEADFC0073D9C0 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676223FEADFC0073D9C0 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676323FEADFC0073D9C0 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676423FEADFC0073D9C0 /* FirebaseInstallations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstallations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676523FEADFC0073D9C0 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676623FEADFC0073D9C0 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676723FEADFC0073D9C0 /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676823FEADFC0073D9C0 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409676923FEADFC0073D9C0 /* grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409678423FEAE010073D9C0 /* grpcpp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = grpcpp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409678523FEAE010073D9C0 /* GTMAppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMAppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409678623FEAE010073D9C0 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409678723FEAE010073D9C0 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409678823FEAE010073D9C0 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409678923FEAE010073D9C0 /* openssl_grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = openssl_grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409679623FEAE040073D9C0 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840BF6CB23FFF37400E9D734 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCoordinator.swift; sourceTree = "<group>"; };
 		84216C3A23FD4F2400AB40A4 /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
 		84216C5B23FD68AF00AB40A4 /* NewRecipePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipePresenter.swift; sourceTree = "<group>"; };
@@ -139,7 +189,15 @@
 		84C74CC523FC17DE00AB519F /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
 		84C74CC623FC17DE00AB519F /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 		84C74CC723FC17DE00AB519F /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
-		D47C0AFAD1E8BB58D277DFA5 /* Pods-VIPER-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		84D14E4023FEB4B500B28A2F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D14E4323FEB4C000B28A2F /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D14E4623FEB55C00B28A2F /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9802623FEA7D2004E8FF0 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		84E9802823FEAC21004E8FF0 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9802923FEAC21004E8FF0 /* grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9802A23FEAC21004E8FF0 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9802B23FEAC21004E8FF0 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9802C23FEAC21004E8FF0 /* openssl_grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = openssl_grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F2849F6BE8F74A90A85EC6 /* Pods_VIPER_Recipes.framework in Frameworks */,
+				50D27D71C5F0D60DD7B804FB /* libPods-VIPER-Recipes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +215,35 @@
 		57363EC161E883A4045611B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A9D06C535A088C6F07F466E /* Pods_VIPER_Recipes.framework */,
+				8409675D23FEADFC0073D9C0 /* absl.framework */,
+				84D14E4623FEB55C00B28A2F /* AppAuth.framework */,
+				84D14E4323FEB4C000B28A2F /* AppAuth.framework */,
+				84D14E4023FEB4B500B28A2F /* SnapKit.framework */,
+				8409675E23FEADFC0073D9C0 /* AppAuth.framework */,
+				8409675F23FEADFC0073D9C0 /* FBLPromises.framework */,
+				8409679623FEAE040073D9C0 /* SnapKit.framework */,
+				8409678423FEAE010073D9C0 /* grpcpp.framework */,
+				8409678523FEAE010073D9C0 /* GTMAppAuth.framework */,
+				8409678623FEAE010073D9C0 /* GTMSessionFetcher.framework */,
+				8409678723FEAE010073D9C0 /* leveldb.framework */,
+				8409678823FEAE010073D9C0 /* nanopb.framework */,
+				8409678923FEAE010073D9C0 /* openssl_grpc.framework */,
+				8409676023FEADFC0073D9C0 /* FirebaseAuth.framework */,
+				8409676123FEADFC0073D9C0 /* FirebaseCore.framework */,
+				8409676223FEADFC0073D9C0 /* FirebaseCoreDiagnostics.framework */,
+				8409676323FEADFC0073D9C0 /* FirebaseFirestore.framework */,
+				8409676423FEADFC0073D9C0 /* FirebaseInstallations.framework */,
+				8409676523FEADFC0073D9C0 /* FirebaseInstanceID.framework */,
+				8409676623FEADFC0073D9C0 /* GoogleDataTransport.framework */,
+				8409676723FEADFC0073D9C0 /* GoogleDataTransportCCTSupport.framework */,
+				8409676823FEADFC0073D9C0 /* GoogleUtilities.framework */,
+				8409676923FEADFC0073D9C0 /* grpc.framework */,
+				84E9802823FEAC21004E8FF0 /* AppAuth.framework */,
+				84E9802923FEAC21004E8FF0 /* grpc.framework */,
+				84E9802A23FEAC21004E8FF0 /* GTMSessionFetcher.framework */,
+				84E9802B23FEAC21004E8FF0 /* nanopb.framework */,
+				84E9802C23FEAC21004E8FF0 /* openssl_grpc.framework */,
+				6EA4C22A005D92F4AC4B546F /* libPods-VIPER-Recipes.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,15 +251,72 @@
 		8284ABCCFF3B8D1947DFF07F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D47C0AFAD1E8BB58D277DFA5 /* Pods-VIPER-Recipes.debug.xcconfig */,
-				1E3721F60195917722F9E76A /* Pods-VIPER-Recipes.release.xcconfig */,
+				597F2D5B52C1DF75FDA3B71A /* Pods-VIPER-Recipes.debug.xcconfig */,
+				617800EF2497EC890E7C332F /* Pods-VIPER-Recipes.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		840BF6C423FFF2EB00E9D734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840BF6CB23FFF37400E9D734 /* MoreView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		840BF6C523FFF2F100E9D734 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8485849523FC2EFB00D190AF /* MoreViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		840BF6C623FFF2FD00E9D734 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8485849323FC2EFB00D190AF /* MorePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		840BF6C723FFF30200E9D734 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8485849723FC2EFB00D190AF /* MoreInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		840BF6C823FFF30800E9D734 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8485849623FC2EFB00D190AF /* MoreProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		840BF6C923FFF31100E9D734 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8485849823FC2EFB00D190AF /* MoreConfigurator.swift */,
+			);
+			name = Configurator;
+			sourceTree = "<group>";
+		};
+		840BF6CA23FFF31A00E9D734 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8485849423FC2EFB00D190AF /* MoreRouter.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 		84216C3323FD4BEF00AB40A4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				84E9802423FEA7B7004E8FF0 /* Alert */,
 				84216C3423FD4BFB00AB40A4 /* CoreData */,
 			);
 			path = Services;
@@ -215,6 +358,13 @@
 				84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */,
 			);
 			path = NewRecipe;
+			sourceTree = "<group>";
+		};
+		8478B04B23FEBAA800E17A9C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		8485844E23FC23ED00D190AF /* Configurator */ = {
@@ -333,12 +483,13 @@
 		8485846223FC2B1000D190AF /* More */ = {
 			isa = PBXGroup;
 			children = (
-				8485849323FC2EFB00D190AF /* MorePresenter.swift */,
-				8485849423FC2EFB00D190AF /* MoreRouter.swift */,
-				8485849523FC2EFB00D190AF /* MoreViewController.swift */,
-				8485849623FC2EFB00D190AF /* MoreProtocols.swift */,
-				8485849723FC2EFB00D190AF /* MoreInteractor.swift */,
-				8485849823FC2EFB00D190AF /* MoreConfigurator.swift */,
+				840BF6C923FFF31100E9D734 /* Configurator */,
+				840BF6C723FFF30200E9D734 /* Interactor */,
+				840BF6C623FFF2FD00E9D734 /* Presenter */,
+				840BF6C823FFF30800E9D734 /* Protocols */,
+				840BF6CA23FFF31A00E9D734 /* Router */,
+				840BF6C423FFF2EB00E9D734 /* View */,
+				840BF6C523FFF2F100E9D734 /* ViewController */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -358,6 +509,7 @@
 				84C74C3E23FBF98E00AB519F /* Products */,
 				8284ABCCFF3B8D1947DFF07F /* Pods */,
 				57363EC161E883A4045611B0 /* Frameworks */,
+				8478B04B23FEBAA800E17A9C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -539,6 +691,22 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		84E9802423FEA7B7004E8FF0 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				84E9802523FEA7C2004E8FF0 /* AlertService */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		84E9802523FEA7C2004E8FF0 /* AlertService */ = {
+			isa = PBXGroup;
+			children = (
+				84E9802623FEA7D2004E8FF0 /* AlertService.swift */,
+			);
+			name = AlertService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -546,12 +714,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C74C5123FBF98F00AB519F /* Build configuration list for PBXNativeTarget "VIPER-Recipes" */;
 			buildPhases = (
-				D4DDA2DFB37CBEE2D2AE87CF /* [CP] Check Pods Manifest.lock */,
+				F251F1D920DD044C9E3A9F68 /* [CP] Check Pods Manifest.lock */,
 				84C74C3923FBF98E00AB519F /* Sources */,
 				84C74C3A23FBF98E00AB519F /* Frameworks */,
 				84C74C3B23FBF98E00AB519F /* Resources */,
-				460225D7FAA9900D41BD5E79 /* [CP] Embed Pods Frameworks */,
-				25262921AB86280C6323CFD3 /* [CP] Copy Pods Resources */,
+				8409679B23FEAE710073D9C0 /* Embed Frameworks */,
+				84D14E4C23FEB64A00B28A2F /* CopyFiles */,
+				4303F10B16CF700F3EA35EEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -611,7 +780,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25262921AB86280C6323CFD3 /* [CP] Copy Pods Resources */ = {
+		4303F10B16CF700F3EA35EEC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -628,24 +797,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		460225D7FAA9900D41BD5E79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4DDA2DFB37CBEE2D2AE87CF /* [CP] Check Pods Manifest.lock */ = {
+		F251F1D920DD044C9E3A9F68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -693,6 +845,7 @@
 				84216C6223FD68AF00AB40A4 /* NewRecipeRouter.swift in Sources */,
 				84C74C8523FC03CF00AB519F /* Colors.swift in Sources */,
 				84216C6423FD68AF00AB40A4 /* NewRecipeProtocols.swift in Sources */,
+				840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */,
 				8485849D23FC2EFB00D190AF /* MoreInteractor.swift in Sources */,
 				84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */,
 				84C74C8723FC03CF00AB519F /* Utilities.swift in Sources */,
@@ -720,6 +873,7 @@
 				84216C6323FD68AF00AB40A4 /* NewRecipeViewController.swift in Sources */,
 				8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */,
 				84216C6123FD68AF00AB40A4 /* NewRecipePresenter.swift in Sources */,
+				84E9802723FEA7D2004E8FF0 /* AlertService.swift in Sources */,
 				84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */,
 				8485846D23FC2EC200D190AF /* SavesInteractor.swift in Sources */,
 				84C74CBC23FC0CD700AB519F /* LogInInteractor.swift in Sources */,
@@ -864,9 +1018,10 @@
 		};
 		84C74C5223FBF98F00AB519F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D47C0AFAD1E8BB58D277DFA5 /* Pods-VIPER-Recipes.debug.xcconfig */;
+			baseConfigurationReference = 597F2D5B52C1DF75FDA3B71A /* Pods-VIPER-Recipes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z76F7M3L8T;
 				INFOPLIST_FILE = "VIPER-Recipes/Info.plist";
@@ -883,9 +1038,10 @@
 		};
 		84C74C5323FBF98F00AB519F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E3721F60195917722F9E76A /* Pods-VIPER-Recipes.release.xcconfig */;
+			baseConfigurationReference = 617800EF2497EC890E7C332F /* Pods-VIPER-Recipes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z76F7M3L8T;
 				INFOPLIST_FILE = "VIPER-Recipes/Info.plist";
@@ -893,6 +1049,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rinatkutuev.self.junior.VIPER-Recipes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

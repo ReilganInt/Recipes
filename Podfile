@@ -3,7 +3,7 @@
 
 target 'VIPER-Recipes' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  #use_frameworks!
 
   # Pods for VIPER-Recipes
 	pod 'Firebase/Analytics'
@@ -12,5 +12,4 @@ target 'VIPER-Recipes' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
 	pod 'SnapKit', '~> 5.0.0'
-	pod 'Alamofire', '~> 5.0.0-rc.3'
 end
