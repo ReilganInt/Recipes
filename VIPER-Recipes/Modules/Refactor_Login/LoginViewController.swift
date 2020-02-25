@@ -1,22 +1,22 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
+//  LoginViewController.swift
+//  VIPER-Recipes
 //
-//  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Created admin on 25.02.2020.
+//  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
 import UIKit
 
-protocol ___VARIABLE_MODULENAME___ViewProtocol: ___VARIABLE_MODULENAME___Protocol {
-    func setPresenter(_ presenter: ___VARIABLE_MODULENAME___PresenterProtocol)
+protocol LoginViewProtocol: LoginProtocol {
+    func setPresenter(_ presenter: LoginPresenterProtocol)
 }
 
-final class ___VARIABLE_MODULENAME___ViewController: UIViewController {
-    private var presenter: ___VARIABLE_MODULENAME___PresenterProtocol?
+final class LoginViewController: UIViewController {
+    private var presenter: LoginPresenterProtocol?
 
-    private lazy var rootView: (UIView & ___VARIABLE_MODULENAME___ViewViewProtocol) = {
-        let view = ___VARIABLE_MODULENAME___View()
+    private lazy var rootView: (UIView & LoginViewViewProtocol) = {
+        let view = LoginView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -28,17 +28,17 @@ final class ___VARIABLE_MODULENAME___ViewController: UIViewController {
     }
 }
 
-extension ___VARIABLE_MODULENAME___ViewController: ___VARIABLE_MODULENAME___ViewProtocol {
-    func setPresenter(_ presenter: ___VARIABLE_MODULENAME___PresenterProtocol) {
+extension LoginViewController: LoginViewProtocol {
+    func setPresenter(_ presenter: LoginPresenterProtocol) {
         self.presenter = presenter
     }
 }
 
-extension ___VARIABLE_MODULENAME___ViewController: ___VARIABLE_MODULENAME___Protocol {
+extension LoginViewController: LoginProtocol {
   
 }
 
-extension ___VARIABLE_MODULENAME___ViewController {
+extension LoginViewController {
     private func setupView() {
         addSubviews()
         setupConstraints()

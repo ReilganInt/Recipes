@@ -1,18 +1,18 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
+//  LoginView.swift
+//  VIPER-Recipes
 //
-//  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Created admin on 25.02.2020.
+//  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
 import UIKit
 
-protocol ___VARIABLE_MODULENAME___ViewViewProtocol {
+protocol LoginViewViewProtocol {
 
 }
 
-final class ___VARIABLE_MODULENAME___View: UIView {
+final class LoginView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -23,11 +23,11 @@ final class ___VARIABLE_MODULENAME___View: UIView {
     }
 }
 
-extension ___VARIABLE_MODULENAME___View: ___VARIABLE_MODULENAME___ViewViewProtocol {
+extension LoginView: LoginViewViewProtocol {
 
 }
 
-extension ___VARIABLE_MODULENAME___View {
+extension LoginView {
   	private func setupView() {
         addSubviews()
         setupConstraints()
