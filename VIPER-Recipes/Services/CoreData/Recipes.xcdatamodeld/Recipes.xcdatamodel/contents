@@ -7,11 +7,11 @@
     </entity>
     <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String"/>
-        <attribute name="stars" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="stars" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipe" inverseEntity="Ingredient"/>
     </entity>
     <elements>
-        <element name="Recipe" positionX="-251.93359375" positionY="7.54296875" width="128" height="88"/>
         <element name="Ingredient" positionX="-28.1953125" positionY="1.27734375" width="128" height="88"/>
+        <element name="Recipe" positionX="-251.93359375" positionY="7.54296875" width="128" height="88"/>
     </elements>
 </model>

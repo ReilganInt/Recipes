@@ -15,30 +15,38 @@ import CoreData
 protocol NewRecipeViewControllerDelegate {
     func didAddNewRecipe()
 }
+enum NewRecipeType {
+    case time
+    case degree
+    case portion
+    case `default`
+}
 
 class NewRecipeViewController: UIViewController, NewRecipeViewProtocol {
 
 	var presenter: NewRecipePresenterProtocol?
     
     lazy var recipeImageView: UIImageView = {
-        let iv =  UIImageView()
+        let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.image = #imageLiteral(resourceName: "select").withRenderingMode(.alwaysOriginal)
         iv.layer.masksToBounds = true
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didChangeRecipeImageView))
+
+        iv.addGestureRecognizer(tapGestureRecognizer)
+        iv.isUserInteractionEnabled = true
         return iv
     }()
     
-    let imageButton: UIButton = UIButton()
+    var pickerArray: [String] = []
+    var currentPicker: NewRecipeType = .default
     
     let nameTextField: UITextField = TextField()
     
-    let timeButton: UIButton = UIButton()
-    let degreeButton: UIButton = UIButton()
-    let categoryButton: UIButton = UIButton()
-    
-    let pickerView: UIPickerView = UIPickerView()
-    
-    let descriptionTextField: UITextField = UITextField()
+    let timePickerCell: UITableViewCell = UITableViewCell(style: .value1, reuseIdentifier: nil)
+    let degreePickerCell: UITableViewCell = UITableViewCell(style: .value1, reuseIdentifier: nil)
+    let portionPickerCell: UITableViewCell = UITableViewCell(style: .value1, reuseIdentifier: nil)
     
     override func loadView() {
         super.loadView()
@@ -53,104 +61,142 @@ class NewRecipeViewController: UIViewController, NewRecipeViewProtocol {
         navigationItem.rightBarButtonItem = saveButton
         navigationItem.leftBarButtonItem = backButton
         view.backgroundColor = .white
-        setup()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        let navigationBarHeight = UIApplication.shared.statusBarFrame.size.height +
+        (navigationController?.navigationBar.frame.height ?? 0.0)
+        
         recipeImageView.snp.makeConstraints({ make in
             make.width.equalTo(view.bounds.width)
             make.height.equalTo(200)
             make.left.equalTo(0)
-            make.top.equalTo(50)
+            make.top.equalTo(navigationBarHeight)
         })
         
         nameTextField.snp.makeConstraints({ make in
-            make.width.equalTo(view.bounds.width - 80)
+            make.width.equalTo(view.bounds.width - 40)
             make.centerX.equalToSuperview()
             make.height.equalTo(50)
             make.top.equalTo(recipeImageView.snp.bottom)
         })
         
-        imageButton.snp.makeConstraints({ make in
-            make.width.equalTo(view.bounds.width)
-            make.height.equalTo(200)
-            make.left.equalTo(0)
-            make.top.equalTo(50)
+        timePickerCell.snp.makeConstraints({ make in
+            make.width.equalTo((view.bounds.width - 40) / 3)
+            make.height.equalTo(50)
+            make.top.equalTo(nameTextField.snp.bottom)
+            make.left.equalTo(20)
         })
         
-        timeButton.snp.makeConstraints({ make in
-            make.width.equalTo((view.bounds.width - 80) / 3)
-            make.left.equalTo(40)
-            make.top.equalTo(80)
+        degreePickerCell.snp.makeConstraints({ make in
+            make.width.equalTo((view.bounds.width - 40) / 3)
+            make.height.equalTo(50)
+            make.top.equalTo(nameTextField.snp.bottom)
+            make.centerX.equalToSuperview()
         })
-        degreeButton.snp.makeConstraints({ make in
-            make.width.equalTo((view.bounds.width - 80) / 3)
-            make.left.equalTo((view.bounds.width - 80) / 3)
-            make.top.equalTo(80)
-        })
-        categoryButton.snp.makeConstraints({ make in
-            make.width.equalTo((view.bounds.width - 80) / 3 * 2)
-            make.left.equalTo((view.bounds.width - 80))
-            make.top.equalTo(80)
+        
+        portionPickerCell.snp.makeConstraints({ make in
+            make.width.equalTo((view.bounds.width - 40) / 3)
+            make.height.equalTo(50)
+            make.top.equalTo(nameTextField.snp.bottom)
+            make.right.equalTo(-20)
         })
     }
     
     private func setup() {
-        view.addSubview(recipeImageView)
-        view.addSubview(nameTextField)
-        view.addSubview(imageButton)
-        view.addSubview(timeButton)
-        view.addSubview(degreeButton)
-        view.addSubview(categoryButton)
-        setupTimeButton()
-        setupDegreeButton()
-        setupCategoryButton()
-        setupImageButton()
+        setupImageView()
         setupNameTextField()
-        
+        setupTimePickerCell()
+        setupDegreePickerCell()
+        setupPortionPickerCell()
     }
     
-    private func setupTimeButton() {
-        timeButton.backgroundColor = .green
+    private func setupImageView() {
+        view.addSubview(recipeImageView)
     }
     
-    private func setupDegreeButton() {
-        degreeButton.backgroundColor = .red
-    }
-    
-    private func setupCategoryButton() {
-        categoryButton.backgroundColor = .blue
-    }
-    
-    
-    
-    
-    private func setupNameTextField() {
-        nameTextField.placeholder = "Recipe name"
-        
-    }
-    
-    private func setupImageButton() {
-        imageButton.backgroundColor = .clear
-        imageButton.layer.cornerRadius = 50
-        imageButton.layer.masksToBounds = true
-        imageButton.addTarget(self, action: #selector(didSelectImage), for: .touchUpInside)
-    }
-    
-    @objc private func didSelectImage() {
+    @objc private func didChangeRecipeImageView() {
+        print("didChangeRecipeImageView")
         showImagePickerControllerActionSheet()
     }
     
+    private func setupNameTextField() {
+        view.addSubview(nameTextField)
+        
+        nameTextField.placeholder = "Recipe name"
+        // Add new font, color
+    }
+    
+    private func setupTimePickerCell() {
+        view.addSubview(timePickerCell)
+        
+        timePickerCell.textLabel?.text = "time"
+        timePickerCell.detailTextLabel?.text = "15"
+        timePickerCell.accessoryType = .disclosureIndicator
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didChangeTimePickerCell))
+        timePickerCell.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func didChangeTimePickerCell() {
+        showPickerController(for: .time)
+    }
+    
+    private func setupDegreePickerCell() {
+        view.addSubview(degreePickerCell)
+        
+        degreePickerCell.textLabel?.text = "°C"
+        degreePickerCell.detailTextLabel?.text = "150"
+        degreePickerCell.accessoryType = .disclosureIndicator
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didChangeDegreePickerCellPickerCell))
+        degreePickerCell.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func didChangeDegreePickerCellPickerCell() {
+        showPickerController(for: .degree)
+    }
+    
+    private func setupPortionPickerCell() {
+        view.addSubview(portionPickerCell)
+        
+        portionPickerCell.textLabel?.text = "Portion"
+        portionPickerCell.detailTextLabel?.text = "2"
+        portionPickerCell.accessoryType = .disclosureIndicator
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didChangePortionPickerCellPickerCell))
+        portionPickerCell.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func didChangePortionPickerCellPickerCell() {
+        showPickerController(for: .portion)
+    }
+    
     @objc private func saveRecipe() {
+//        var array: [Recipe] = []
+        
+//        DataCoordinator.getAllRecipes(comletionHandler: {(result) in
+//            switch result {
+//            case .success(let data):
+//                print(data)
+//                array = data
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        })
+        
         let name = self.nameTextField.text
         DataCoordinator.performBackgroundTask { (context) -> (Void) in
             let obj = Recipe(context: context)
             obj.name = name
+            obj.stars = Int32.random(in: 0..<5)
             do {
                 print(context.hasChanges)
+//                for item in array {
+//                    context.delete(item)
+//                }
                 try context.save()
                 print("saved changes")
             } catch {
@@ -166,6 +212,7 @@ class NewRecipeViewController: UIViewController, NewRecipeViewProtocol {
             switch result {
             case .success(let data):
                 print(data)
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -208,5 +255,73 @@ extension NewRecipeViewController: UIImagePickerControllerDelegate, UINavigation
         }
         dismiss(animated: true)
         
+    }
+}
+
+extension NewRecipeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerArray[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch currentPicker {
+        case .time:
+            timePickerCell.detailTextLabel?.text = pickerArray[row]
+        case .degree:
+            degreePickerCell.detailTextLabel?.text = pickerArray[row]
+        case .portion:
+            portionPickerCell.detailTextLabel?.text = pickerArray[row]
+        case .default:
+            break
+        }
+    }
+    
+    func showPickerController(for type: NewRecipeType) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
+        switch type {
+        case .time:
+            pickerArray = []
+            for value in 15...300 {
+                if value % 5 == 0 {
+                    pickerArray.append(String(value))
+                }
+            }
+            AlertService.showPicker(style: .actionSheet, title: "Change time", message: "", actions: [UIAlertAction(title: "Ok", style: .cancel, handler: nil)], pickerView: pickerView, completion: {
+                self.currentPicker = .time
+            })
+        case .degree:
+            pickerArray = []
+            for value in 50...300 {
+                if value % 10 == 0 {
+                    pickerArray.append(String(value))
+                }
+            }
+            AlertService.showPicker(style: .actionSheet, title: "Change degree", message: "", actions: [UIAlertAction(title: "Ok", style: .cancel, handler: nil)], pickerView: pickerView, completion: {
+                self.currentPicker = .degree
+            })
+        case .portion:
+            pickerArray = []
+            for value in 1...15 {
+                pickerArray.append(String(value))
+            }
+            AlertService.showPicker(style: .actionSheet, title: "Change portions", message: "", actions: [UIAlertAction(title: "Ok", style: .cancel, handler: nil)], pickerView: pickerView, completion: {
+                self.currentPicker = .portion
+            })
+        case .default:
+            break
+        }
     }
 }

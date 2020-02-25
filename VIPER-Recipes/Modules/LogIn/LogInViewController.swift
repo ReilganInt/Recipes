@@ -16,7 +16,7 @@ class LogInViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        ui = LogInView() 
+        ui = LogInView()
     }
     
 	override func viewDidLoad() {

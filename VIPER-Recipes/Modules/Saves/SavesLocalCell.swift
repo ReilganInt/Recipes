@@ -34,7 +34,7 @@ class SavesLocalCell: UICollectionViewCell {
         containerView.addSubview(ratingView)
         
         nameLabel.text = "Name"
-        ratingView.text = "⭐ ⭐ ⭐ ⭐ ⭐"
+        ratingView.text = ""
         imageView.image = #imageLiteral(resourceName: "1")
         imageView.layer.cornerRadius = 30
         imageView.layer.masksToBounds = true

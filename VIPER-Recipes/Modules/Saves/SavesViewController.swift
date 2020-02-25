@@ -14,12 +14,17 @@ import CoreData
 
 class SavesViewController: UICollectionViewController {
 
-    var dataCache: [Recipe] = []
+    var dataCache: [Recipe] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     var presenter: SavesPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Saves"
+        
         DataCoordinator.getAllRecipes() { result in
             switch result {
             case .failure(let error):
@@ -39,7 +44,9 @@ class SavesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SavesLocalCell.id, for: indexPath)
-        (cell as? SavesLocalCell)?.nameLabel.text = dataCache[indexPath.row].name
+        guard let savesCell = cell as? SavesLocalCell else { return cell }
+        savesCell.nameLabel.text = dataCache[indexPath.row].name
+        savesCell.ratingView.text = String(dataCache[indexPath.row].stars)
         return cell
     }
     
