@@ -18,6 +18,8 @@ class LogInView: UIView {
     let signUpButton = UIButton(type: .system)
     let errorLabel = UILabel()
     
+    
+    
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [self.emailTextField, self.passwordTextField, self.signInButton, self.signUpButton, self.errorLabel])
         stackView.axis = .vertical

@@ -8,6 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		50D27D71C5F0D60DD7B804FB /* libPods-VIPER-Recipes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA4C22A005D92F4AC4B546F /* libPods-VIPER-Recipes.a */; };
+		8406AF102405821000578667 /* LoginInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF012405821000578667 /* LoginInteractorDependencies.swift */; };
+		8406AF112405821000578667 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF022405821000578667 /* LoginAction.swift */; };
+		8406AF122405821000578667 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF032405821000578667 /* LoginPresenter.swift */; };
+		8406AF132405821000578667 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF042405821000578667 /* LoginRouter.swift */; };
+		8406AF142405821000578667 /* LoginRouterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF052405821000578667 /* LoginRouterDependencies.swift */; };
+		8406AF152405821000578667 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF062405821000578667 /* LoginRoute.swift */; };
+		8406AF162405821000578667 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF072405821000578667 /* LoginViewController.swift */; };
+		8406AF172405821000578667 /* LoginWireframeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF082405821000578667 /* LoginWireframeError.swift */; };
+		8406AF182405821000578667 /* LoginPresenterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF092405821000578667 /* LoginPresenterDependencies.swift */; };
+		8406AF192405821000578667 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF0A2405821000578667 /* LoginInteractor.swift */; };
+		8406AF1A2405821000578667 /* LoginDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF0B2405821000578667 /* LoginDelegateProtocol.swift */; };
+		8406AF1B2405821000578667 /* LoginEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF0C2405821000578667 /* LoginEvent.swift */; };
+		8406AF1C2405821000578667 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF0D2405821000578667 /* LoginView.swift */; };
+		8406AF1D2405821000578667 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF0E2405821000578667 /* LoginProtocol.swift */; };
+		8406AF1E2405821000578667 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF0F2405821000578667 /* LoginWireframe.swift */; };
+		8406AF2B24058F3B00578667 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF1F24058F3A00578667 /* Roboto-Regular.ttf */; };
+		8406AF2C24058F3B00578667 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2024058F3A00578667 /* Roboto-Bold.ttf */; };
+		8406AF2D24058F3B00578667 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2124058F3A00578667 /* Roboto-BlackItalic.ttf */; };
+		8406AF2E24058F3B00578667 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2224058F3A00578667 /* Roboto-Light.ttf */; };
+		8406AF2F24058F3B00578667 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2324058F3A00578667 /* Roboto-BoldItalic.ttf */; };
+		8406AF3024058F3B00578667 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2424058F3A00578667 /* Roboto-Black.ttf */; };
+		8406AF3124058F3B00578667 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2524058F3B00578667 /* Roboto-Medium.ttf */; };
+		8406AF3224058F3B00578667 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2624058F3B00578667 /* Roboto-Italic.ttf */; };
+		8406AF3324058F3B00578667 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2724058F3B00578667 /* Roboto-LightItalic.ttf */; };
+		8406AF3424058F3B00578667 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2824058F3B00578667 /* Roboto-MediumItalic.ttf */; };
+		8406AF3524058F3B00578667 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2924058F3B00578667 /* Roboto-ThinItalic.ttf */; };
+		8406AF3624058F3B00578667 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2A24058F3B00578667 /* Roboto-Thin.ttf */; };
+		8406AF392405922B00578667 /* LoginModule+UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF382405922B00578667 /* LoginModule+UIDevice.swift */; };
 		840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BF6CB23FFF37400E9D734 /* MoreView.swift */; };
 		84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */; };
 		84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3923FD4F2400AB40A4 /* Recipes.xcdatamodeld */; };
@@ -104,6 +132,34 @@
 		597F2D5B52C1DF75FDA3B71A /* Pods-VIPER-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
 		617800EF2497EC890E7C332F /* Pods-VIPER-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Recipes.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Recipes/Pods-VIPER-Recipes.release.xcconfig"; sourceTree = "<group>"; };
 		6EA4C22A005D92F4AC4B546F /* libPods-VIPER-Recipes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-Recipes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8406AF012405821000578667 /* LoginInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorDependencies.swift; sourceTree = "<group>"; };
+		8406AF022405821000578667 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		8406AF032405821000578667 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		8406AF042405821000578667 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		8406AF052405821000578667 /* LoginRouterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterDependencies.swift; sourceTree = "<group>"; };
+		8406AF062405821000578667 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		8406AF072405821000578667 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8406AF082405821000578667 /* LoginWireframeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframeError.swift; sourceTree = "<group>"; };
+		8406AF092405821000578667 /* LoginPresenterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterDependencies.swift; sourceTree = "<group>"; };
+		8406AF0A2405821000578667 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		8406AF0B2405821000578667 /* LoginDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegateProtocol.swift; sourceTree = "<group>"; };
+		8406AF0C2405821000578667 /* LoginEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvent.swift; sourceTree = "<group>"; };
+		8406AF0D2405821000578667 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8406AF0E2405821000578667 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		8406AF0F2405821000578667 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		8406AF1F24058F3A00578667 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8406AF2024058F3A00578667 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		8406AF2124058F3A00578667 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		8406AF2224058F3A00578667 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		8406AF2324058F3A00578667 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8406AF2424058F3A00578667 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		8406AF2524058F3B00578667 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8406AF2624058F3B00578667 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		8406AF2724058F3B00578667 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		8406AF2824058F3B00578667 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		8406AF2924058F3B00578667 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		8406AF2A24058F3B00578667 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		8406AF382405922B00578667 /* LoginModule+UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModule+UIDevice.swift"; sourceTree = "<group>"; };
 		8409675D23FEADFC0073D9C0 /* absl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = absl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409675E23FEADFC0073D9C0 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409675F23FEADFC0073D9C0 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +311,36 @@
 				617800EF2497EC890E7C332F /* Pods-VIPER-Recipes.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8406AF00240581E900578667 /* Refactor_Login */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF012405821000578667 /* LoginInteractorDependencies.swift */,
+				8406AF022405821000578667 /* LoginAction.swift */,
+				8406AF032405821000578667 /* LoginPresenter.swift */,
+				8406AF042405821000578667 /* LoginRouter.swift */,
+				8406AF052405821000578667 /* LoginRouterDependencies.swift */,
+				8406AF062405821000578667 /* LoginRoute.swift */,
+				8406AF072405821000578667 /* LoginViewController.swift */,
+				8406AF082405821000578667 /* LoginWireframeError.swift */,
+				8406AF092405821000578667 /* LoginPresenterDependencies.swift */,
+				8406AF0A2405821000578667 /* LoginInteractor.swift */,
+				8406AF0B2405821000578667 /* LoginDelegateProtocol.swift */,
+				8406AF0C2405821000578667 /* LoginEvent.swift */,
+				8406AF0D2405821000578667 /* LoginView.swift */,
+				8406AF0E2405821000578667 /* LoginProtocol.swift */,
+				8406AF0F2405821000578667 /* LoginWireframe.swift */,
+			);
+			path = Refactor_Login;
+			sourceTree = "<group>";
+		};
+		8406AF372405920B00578667 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF382405922B00578667 /* LoginModule+UIDevice.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		840BF6C423FFF2EB00E9D734 /* View */ = {
@@ -524,6 +610,7 @@
 		84C74C3F23FBF98E00AB519F /* VIPER-Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				8406AF372405920B00578667 /* Extensions */,
 				84216C3323FD4BEF00AB40A4 /* Services */,
 				84C74C6523FBFB9800AB519F /* Helpers */,
 				84C74C6423FBFB8F00AB519F /* Modules */,
@@ -569,6 +656,18 @@
 			children = (
 				84C74C6023FBFB7D00AB519F /* Amsterdam.ttf */,
 				84C74C6123FBFB7D00AB519F /* Graphik-regular.ttf */,
+				8406AF2424058F3A00578667 /* Roboto-Black.ttf */,
+				8406AF2124058F3A00578667 /* Roboto-BlackItalic.ttf */,
+				8406AF2024058F3A00578667 /* Roboto-Bold.ttf */,
+				8406AF2324058F3A00578667 /* Roboto-BoldItalic.ttf */,
+				8406AF2624058F3B00578667 /* Roboto-Italic.ttf */,
+				8406AF2224058F3A00578667 /* Roboto-Light.ttf */,
+				8406AF2724058F3B00578667 /* Roboto-LightItalic.ttf */,
+				8406AF2524058F3B00578667 /* Roboto-Medium.ttf */,
+				8406AF2824058F3B00578667 /* Roboto-MediumItalic.ttf */,
+				8406AF1F24058F3A00578667 /* Roboto-Regular.ttf */,
+				8406AF2A24058F3B00578667 /* Roboto-Thin.ttf */,
+				8406AF2924058F3B00578667 /* Roboto-ThinItalic.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -576,6 +675,7 @@
 		84C74C6423FBFB8F00AB519F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8406AF00240581E900578667 /* Refactor_Login */,
 				84216C3C23FD658300AB40A4 /* NewRecipe */,
 				8485846223FC2B1000D190AF /* More */,
 				8485846123FC2B0A00D190AF /* Grocery */,
@@ -769,11 +869,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8406AF2C24058F3B00578667 /* Roboto-Bold.ttf in Resources */,
+				8406AF3424058F3B00578667 /* Roboto-MediumItalic.ttf in Resources */,
+				8406AF3624058F3B00578667 /* Roboto-Thin.ttf in Resources */,
+				8406AF2B24058F3B00578667 /* Roboto-Regular.ttf in Resources */,
+				8406AF3324058F3B00578667 /* Roboto-LightItalic.ttf in Resources */,
 				84C74C6323FBFB7D00AB519F /* Graphik-regular.ttf in Resources */,
 				84C74C4D23FBF98F00AB519F /* LaunchScreen.storyboard in Resources */,
 				84C74C4A23FBF98F00AB519F /* Assets.xcassets in Resources */,
+				8406AF3224058F3B00578667 /* Roboto-Italic.ttf in Resources */,
+				8406AF3024058F3B00578667 /* Roboto-Black.ttf in Resources */,
 				84C74C6A23FBFE0700AB519F /* GoogleService-Info.plist in Resources */,
 				84C74C6223FBFB7D00AB519F /* Amsterdam.ttf in Resources */,
+				8406AF3124058F3B00578667 /* Roboto-Medium.ttf in Resources */,
+				8406AF3524058F3B00578667 /* Roboto-ThinItalic.ttf in Resources */,
+				8406AF2D24058F3B00578667 /* Roboto-BlackItalic.ttf in Resources */,
+				8406AF2F24058F3B00578667 /* Roboto-BoldItalic.ttf in Resources */,
+				8406AF2E24058F3B00578667 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,12 +943,15 @@
 				84C74CB823FC0CD700AB519F /* LogInPresenter.swift in Sources */,
 				8485848223FC2EDF00D190AF /* GroceryRouter.swift in Sources */,
 				84C74CBA23FC0CD700AB519F /* LogInViewController.swift in Sources */,
+				8406AF192405821000578667 /* LoginInteractor.swift in Sources */,
+				8406AF132405821000578667 /* LoginRouter.swift in Sources */,
 				8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */,
 				8485846923FC2EC200D190AF /* SavesPresenter.swift in Sources */,
 				84C74CBB23FC0CD700AB519F /* LogInProtocols.swift in Sources */,
 				8485849E23FC2EFB00D190AF /* MoreConfigurator.swift in Sources */,
 				8485849223FC2EEE00D190AF /* RecipesConfigurator.swift in Sources */,
 				8485849C23FC2EFB00D190AF /* MoreProtocols.swift in Sources */,
+				8406AF392405922B00578667 /* LoginModule+UIDevice.swift in Sources */,
 				8485849A23FC2EFB00D190AF /* MoreRouter.swift in Sources */,
 				8485848423FC2EDF00D190AF /* GroceryProtocols.swift in Sources */,
 				8485846E23FC2EC200D190AF /* SavesConfigurator.swift in Sources */,
@@ -844,6 +959,7 @@
 				8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */,
 				84216C6223FD68AF00AB40A4 /* NewRecipeRouter.swift in Sources */,
 				84C74C8523FC03CF00AB519F /* Colors.swift in Sources */,
+				8406AF122405821000578667 /* LoginPresenter.swift in Sources */,
 				84216C6423FD68AF00AB40A4 /* NewRecipeProtocols.swift in Sources */,
 				840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */,
 				8485849D23FC2EFB00D190AF /* MoreInteractor.swift in Sources */,
@@ -852,10 +968,14 @@
 				84C74CCB23FC17DE00AB519F /* SignUpProtocols.swift in Sources */,
 				84C74CCA23FC17DE00AB519F /* SignUpViewController.swift in Sources */,
 				84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */,
+				8406AF152405821000578667 /* LoginRoute.swift in Sources */,
+				8406AF1C2405821000578667 /* LoginView.swift in Sources */,
 				8485848D23FC2EEE00D190AF /* RecipesPresenter.swift in Sources */,
+				8406AF1B2405821000578667 /* LoginEvent.swift in Sources */,
 				8485849923FC2EFB00D190AF /* MorePresenter.swift in Sources */,
 				84C74CC923FC17DE00AB519F /* SignUpRouter.swift in Sources */,
 				8485848E23FC2EEE00D190AF /* RecipesRouter.swift in Sources */,
+				8406AF1A2405821000578667 /* LoginDelegateProtocol.swift in Sources */,
 				8485849023FC2EEE00D190AF /* RecipesProtocols.swift in Sources */,
 				84C74CB923FC0CD700AB519F /* LogInRouter.swift in Sources */,
 				848584A123FC33C400D190AF /* SavesLocalCell.swift in Sources */,
@@ -865,10 +985,12 @@
 				8485849123FC2EEE00D190AF /* RecipesInteractor.swift in Sources */,
 				8485846A23FC2EC200D190AF /* SavesRouter.swift in Sources */,
 				8485848123FC2EDF00D190AF /* GroceryPresenter.swift in Sources */,
+				8406AF1D2405821000578667 /* LoginProtocol.swift in Sources */,
 				8485848323FC2EDF00D190AF /* GroceryViewController.swift in Sources */,
 				8485848523FC2EDF00D190AF /* GroceryInteractor.swift in Sources */,
 				84C74C4123FBF98E00AB519F /* AppDelegate.swift in Sources */,
 				84C74CC123FC0D7100AB519F /* LogInView.swift in Sources */,
+				8406AF172405821000578667 /* LoginWireframeError.swift in Sources */,
 				8485846C23FC2EC200D190AF /* SavesProtocols.swift in Sources */,
 				84216C6323FD68AF00AB40A4 /* NewRecipeViewController.swift in Sources */,
 				8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */,
@@ -877,12 +999,18 @@
 				84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */,
 				8485846D23FC2EC200D190AF /* SavesInteractor.swift in Sources */,
 				84C74CBC23FC0CD700AB519F /* LogInInteractor.swift in Sources */,
+				8406AF1E2405821000578667 /* LoginWireframe.swift in Sources */,
+				8406AF162405821000578667 /* LoginViewController.swift in Sources */,
 				84C74C4323FBF98E00AB519F /* SceneDelegate.swift in Sources */,
+				8406AF112405821000578667 /* LoginAction.swift in Sources */,
+				8406AF182405821000578667 /* LoginPresenterDependencies.swift in Sources */,
 				84C74C5C23FBFB0500AB519F /* TextField.swift in Sources */,
 				84C74CBD23FC0CD700AB519F /* LogInConfigurator.swift in Sources */,
+				8406AF142405821000578667 /* LoginRouterDependencies.swift in Sources */,
 				8485846B23FC2EC200D190AF /* SavesViewController.swift in Sources */,
 				84C74CC823FC17DE00AB519F /* SignUpPresenter.swift in Sources */,
 				84C74CCC23FC17DE00AB519F /* SignUpInteractor.swift in Sources */,
+				8406AF102405821000578667 /* LoginInteractorDependencies.swift in Sources */,
 				8485848F23FC2EEE00D190AF /* RecipesViewController.swift in Sources */,
 				84C74C5E23FBFB2800AB519F /* SegmentControl.swift in Sources */,
 			);
