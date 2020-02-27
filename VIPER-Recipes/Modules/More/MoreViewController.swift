@@ -47,7 +47,9 @@ class MoreViewController: UIViewController, MoreViewProtocol {
             let defaults = UserDefaults.standard
             defaults.removeObject(forKey: "UserUID")
             
-            self.dismiss(animated: true, completion: nil)
+            let vc = LoginWireframe.makeViewController(delegate: nil)
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: nil)
             
         })
         

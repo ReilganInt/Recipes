@@ -51,6 +51,8 @@
 		8406AF592407F8B600578667 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF4A2407F8B600578667 /* SignupView.swift */; };
 		8406AF5A2407F8B600578667 /* SignupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF4B2407F8B600578667 /* SignupProtocol.swift */; };
 		8406AF5B2407F8B600578667 /* SignupWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF4C2407F8B600578667 /* SignupWireframe.swift */; };
+		8406AF5E24080C2500578667 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF5D24080C2500578667 /* AuthenticationViewController.swift */; };
+		8406AF6024080E0400578667 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF5F24080E0400578667 /* ProgressHUD.swift */; };
 		840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BF6CB23FFF37400E9D734 /* MoreView.swift */; };
 		84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */; };
 		84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3923FD4F2400AB40A4 /* Recipes.xcdatamodeld */; };
@@ -177,6 +179,8 @@
 		8406AF4A2407F8B600578667 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		8406AF4B2407F8B600578667 /* SignupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProtocol.swift; sourceTree = "<group>"; };
 		8406AF4C2407F8B600578667 /* SignupWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWireframe.swift; sourceTree = "<group>"; };
+		8406AF5D24080C2500578667 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		8406AF5F24080E0400578667 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		8409675D23FEADFC0073D9C0 /* absl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = absl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409675E23FEADFC0073D9C0 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409675F23FEADFC0073D9C0 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,6 +370,14 @@
 				8406AF452407F8B600578667 /* SignupWireframeError.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		8406AF5C24080BCC00578667 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF5D24080C2500578667 /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		840BF6C423FFF2EB00E9D734 /* View */ = {
@@ -645,6 +657,7 @@
 		84C74C6423FBFB8F00AB519F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8406AF5C24080BCC00578667 /* Authentication */,
 				8406AF3B2407F88800578667 /* Signup */,
 				8406AF00240581E900578667 /* Login */,
 				84216C3C23FD658300AB40A4 /* NewRecipe */,
@@ -663,6 +676,7 @@
 				84C74C8223FC03CF00AB519F /* Colors.swift */,
 				84C74C8323FC03CF00AB519F /* Fonts.swift */,
 				84C74C8423FC03CF00AB519F /* Utilities.swift */,
+				8406AF5F24080E0400578667 /* ProgressHUD.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -825,6 +839,7 @@
 			files = (
 				8485849B23FC2EFB00D190AF /* MoreViewController.swift in Sources */,
 				8406AF4F2407F8B600578667 /* SignupPresenter.swift in Sources */,
+				8406AF6024080E0400578667 /* ProgressHUD.swift in Sources */,
 				84216C6523FD68AF00AB40A4 /* NewRecipeInteractor.swift in Sources */,
 				8406AF4D2407F8B600578667 /* SignupInteractorDependencies.swift in Sources */,
 				8485848223FC2EDF00D190AF /* GroceryRouter.swift in Sources */,
@@ -840,6 +855,7 @@
 				8485849A23FC2EFB00D190AF /* MoreRouter.swift in Sources */,
 				8485848423FC2EDF00D190AF /* GroceryProtocols.swift in Sources */,
 				8485846E23FC2EC200D190AF /* SavesConfigurator.swift in Sources */,
+				8406AF5E24080C2500578667 /* AuthenticationViewController.swift in Sources */,
 				8485848623FC2EDF00D190AF /* GroceryConfigurator.swift in Sources */,
 				8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */,
 				84216C6223FD68AF00AB40A4 /* NewRecipeRouter.swift in Sources */,

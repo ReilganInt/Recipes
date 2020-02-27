@@ -85,6 +85,7 @@ extension SignupView {
     }
     
     private func setupConstraints() {
+        
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
