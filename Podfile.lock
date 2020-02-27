@@ -158,7 +158,6 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Alamofire (5.0.0-rc.3)
   - AppAuth (1.3.0):
     - AppAuth/Core (= 1.3.0)
     - AppAuth/ExternalUserAgent (= 1.3.0)
@@ -299,7 +298,6 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-rc.3)
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
@@ -310,7 +308,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - abseil
-    - Alamofire
     - AppAuth
     - BoringSSL-GRPC
     - Firebase
@@ -339,7 +336,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
-  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   Firebase: 2672e5636b42f977177716317e68346ae5e9de25
@@ -366,6 +362,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 5bd0c96f2086ff3c0f631957a7adb38266f9fee4
+PODFILE CHECKSUM: 2824ff535a88c80b1fa3ab1525240f740c3fc330
 
 COCOAPODS: 1.8.4
