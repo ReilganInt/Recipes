@@ -43,7 +43,30 @@ extension LoginPresenter: LoginPresenterProtocol {
 
     func didTriggerAction(_ action: LoginAction) {
         switch action {
-            default: ()
+        case .signIn: signIn()
+        case .signInWithApple: signInWithApple()
+        case .createAnAccount: createAnAccount()
         }
+    }
+}
+
+extension LoginPresenter {
+    fileprivate func signIn() {
+        interactor.signIn(view!.getEmailTextField(), view!.getPasswordtextField(), completion: { result in
+            switch result {
+            case .failure(let err):
+                print(err.localizedDescription)
+            case .success(_):
+                self.router.navigate(toRoute: .main)
+            }
+        })
+    }
+    
+    fileprivate func signInWithApple() {
+        print("signInWithApple")
+    }
+    
+    fileprivate func createAnAccount() {
+        router.navigate(toRoute: .createAnAccount)
     }
 }

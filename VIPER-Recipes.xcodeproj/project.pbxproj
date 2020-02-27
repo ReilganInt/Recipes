@@ -36,6 +36,21 @@
 		8406AF3524058F3B00578667 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2924058F3B00578667 /* Roboto-ThinItalic.ttf */; };
 		8406AF3624058F3B00578667 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8406AF2A24058F3B00578667 /* Roboto-Thin.ttf */; };
 		8406AF392405922B00578667 /* LoginModule+UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF382405922B00578667 /* LoginModule+UIDevice.swift */; };
+		8406AF4D2407F8B600578667 /* SignupInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF3E2407F8B600578667 /* SignupInteractorDependencies.swift */; };
+		8406AF4E2407F8B600578667 /* SignupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF3F2407F8B600578667 /* SignupAction.swift */; };
+		8406AF4F2407F8B600578667 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF402407F8B600578667 /* SignupPresenter.swift */; };
+		8406AF502407F8B600578667 /* SignupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF412407F8B600578667 /* SignupRouter.swift */; };
+		8406AF512407F8B600578667 /* SignupRouterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF422407F8B600578667 /* SignupRouterDependencies.swift */; };
+		8406AF522407F8B600578667 /* SignupRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF432407F8B600578667 /* SignupRoute.swift */; };
+		8406AF532407F8B600578667 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF442407F8B600578667 /* SignupViewController.swift */; };
+		8406AF542407F8B600578667 /* SignupWireframeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF452407F8B600578667 /* SignupWireframeError.swift */; };
+		8406AF552407F8B600578667 /* SignupPresenterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF462407F8B600578667 /* SignupPresenterDependencies.swift */; };
+		8406AF562407F8B600578667 /* SignupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF472407F8B600578667 /* SignupInteractor.swift */; };
+		8406AF572407F8B600578667 /* SignupDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF482407F8B600578667 /* SignupDelegateProtocol.swift */; };
+		8406AF582407F8B600578667 /* SignupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF492407F8B600578667 /* SignupEvent.swift */; };
+		8406AF592407F8B600578667 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF4A2407F8B600578667 /* SignupView.swift */; };
+		8406AF5A2407F8B600578667 /* SignupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF4B2407F8B600578667 /* SignupProtocol.swift */; };
+		8406AF5B2407F8B600578667 /* SignupWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406AF4C2407F8B600578667 /* SignupWireframe.swift */; };
 		840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BF6CB23FFF37400E9D734 /* MoreView.swift */; };
 		84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3723FD4C2700AB40A4 /* DataCoordinator.swift */; };
 		84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84216C3923FD4F2400AB40A4 /* Recipes.xcdatamodeld */; };
@@ -46,7 +61,6 @@
 		84216C6523FD68AF00AB40A4 /* NewRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C5F23FD68AF00AB40A4 /* NewRecipeInteractor.swift */; };
 		84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */; };
 		8478B04C23FEBF2E00E17A9C /* (null) in CopyFiles */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8485845623FC242B00D190AF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845523FC242B00D190AF /* SignUpView.swift */; };
 		8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845923FC28C700D190AF /* MainTabBarController.swift */; };
 		8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845B23FC290C00D190AF /* MainTabBar.swift */; };
 		8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845D23FC294100D190AF /* MainTabBarButton.swift */; };
@@ -87,19 +101,6 @@
 		84C74C8523FC03CF00AB519F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74C8223FC03CF00AB519F /* Colors.swift */; };
 		84C74C8623FC03CF00AB519F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74C8323FC03CF00AB519F /* Fonts.swift */; };
 		84C74C8723FC03CF00AB519F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74C8423FC03CF00AB519F /* Utilities.swift */; };
-		84C74CB823FC0CD700AB519F /* LogInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CB223FC0CD700AB519F /* LogInPresenter.swift */; };
-		84C74CB923FC0CD700AB519F /* LogInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CB323FC0CD700AB519F /* LogInRouter.swift */; };
-		84C74CBA23FC0CD700AB519F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CB423FC0CD700AB519F /* LogInViewController.swift */; };
-		84C74CBB23FC0CD700AB519F /* LogInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CB523FC0CD700AB519F /* LogInProtocols.swift */; };
-		84C74CBC23FC0CD700AB519F /* LogInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CB623FC0CD700AB519F /* LogInInteractor.swift */; };
-		84C74CBD23FC0CD700AB519F /* LogInConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CB723FC0CD700AB519F /* LogInConfigurator.swift */; };
-		84C74CC123FC0D7100AB519F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC023FC0D7100AB519F /* LogInView.swift */; };
-		84C74CC823FC17DE00AB519F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC223FC17DE00AB519F /* SignUpPresenter.swift */; };
-		84C74CC923FC17DE00AB519F /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC323FC17DE00AB519F /* SignUpRouter.swift */; };
-		84C74CCA23FC17DE00AB519F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC423FC17DE00AB519F /* SignUpViewController.swift */; };
-		84C74CCB23FC17DE00AB519F /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC523FC17DE00AB519F /* SignUpProtocols.swift */; };
-		84C74CCC23FC17DE00AB519F /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC623FC17DE00AB519F /* SignUpInteractor.swift */; };
-		84C74CCD23FC17DE00AB519F /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74CC723FC17DE00AB519F /* SignUpConfigurator.swift */; };
 		84D14E3F23FEB4AD00B28A2F /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84E9802723FEA7D2004E8FF0 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9802623FEA7D2004E8FF0 /* AlertService.swift */; };
 /* End PBXBuildFile section */
@@ -160,6 +161,22 @@
 		8406AF2924058F3B00578667 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		8406AF2A24058F3B00578667 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		8406AF382405922B00578667 /* LoginModule+UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModule+UIDevice.swift"; sourceTree = "<group>"; };
+		8406AF3A2407C8F000578667 /* VIPER-Recipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VIPER-Recipes.entitlements"; sourceTree = "<group>"; };
+		8406AF3E2407F8B600578667 /* SignupInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupInteractorDependencies.swift; sourceTree = "<group>"; };
+		8406AF3F2407F8B600578667 /* SignupAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAction.swift; sourceTree = "<group>"; };
+		8406AF402407F8B600578667 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		8406AF412407F8B600578667 /* SignupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRouter.swift; sourceTree = "<group>"; };
+		8406AF422407F8B600578667 /* SignupRouterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRouterDependencies.swift; sourceTree = "<group>"; };
+		8406AF432407F8B600578667 /* SignupRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRoute.swift; sourceTree = "<group>"; };
+		8406AF442407F8B600578667 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		8406AF452407F8B600578667 /* SignupWireframeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWireframeError.swift; sourceTree = "<group>"; };
+		8406AF462407F8B600578667 /* SignupPresenterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterDependencies.swift; sourceTree = "<group>"; };
+		8406AF472407F8B600578667 /* SignupInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupInteractor.swift; sourceTree = "<group>"; };
+		8406AF482407F8B600578667 /* SignupDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDelegateProtocol.swift; sourceTree = "<group>"; };
+		8406AF492407F8B600578667 /* SignupEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEvent.swift; sourceTree = "<group>"; };
+		8406AF4A2407F8B600578667 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		8406AF4B2407F8B600578667 /* SignupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProtocol.swift; sourceTree = "<group>"; };
+		8406AF4C2407F8B600578667 /* SignupWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWireframe.swift; sourceTree = "<group>"; };
 		8409675D23FEADFC0073D9C0 /* absl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = absl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409675E23FEADFC0073D9C0 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409675F23FEADFC0073D9C0 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,7 +206,6 @@
 		84216C5E23FD68AF00AB40A4 /* NewRecipeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeProtocols.swift; sourceTree = "<group>"; };
 		84216C5F23FD68AF00AB40A4 /* NewRecipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeInteractor.swift; sourceTree = "<group>"; };
 		84216C6023FD68AF00AB40A4 /* NewRecipeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeConfigurator.swift; sourceTree = "<group>"; };
-		8485845523FC242B00D190AF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8485845923FC28C700D190AF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8485845B23FC290C00D190AF /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		8485845D23FC294100D190AF /* MainTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarButton.swift; sourceTree = "<group>"; };
@@ -232,19 +248,6 @@
 		84C74C8223FC03CF00AB519F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		84C74C8323FC03CF00AB519F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		84C74C8423FC03CF00AB519F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		84C74CB223FC0CD700AB519F /* LogInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPresenter.swift; sourceTree = "<group>"; };
-		84C74CB323FC0CD700AB519F /* LogInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRouter.swift; sourceTree = "<group>"; };
-		84C74CB423FC0CD700AB519F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		84C74CB523FC0CD700AB519F /* LogInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInProtocols.swift; sourceTree = "<group>"; };
-		84C74CB623FC0CD700AB519F /* LogInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInInteractor.swift; sourceTree = "<group>"; };
-		84C74CB723FC0CD700AB519F /* LogInConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInConfigurator.swift; sourceTree = "<group>"; };
-		84C74CC023FC0D7100AB519F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		84C74CC223FC17DE00AB519F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
-		84C74CC323FC17DE00AB519F /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
-		84C74CC423FC17DE00AB519F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		84C74CC523FC17DE00AB519F /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
-		84C74CC623FC17DE00AB519F /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
-		84C74CC723FC17DE00AB519F /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
 		84D14E4023FEB4B500B28A2F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D14E4323FEB4C000B28A2F /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D14E4623FEB55C00B28A2F /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -313,26 +316,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		8406AF00240581E900578667 /* Refactor_Login */ = {
+		8406AF00240581E900578667 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				8406AF012405821000578667 /* LoginInteractorDependencies.swift */,
 				8406AF022405821000578667 /* LoginAction.swift */,
-				8406AF032405821000578667 /* LoginPresenter.swift */,
-				8406AF042405821000578667 /* LoginRouter.swift */,
-				8406AF052405821000578667 /* LoginRouterDependencies.swift */,
-				8406AF062405821000578667 /* LoginRoute.swift */,
-				8406AF072405821000578667 /* LoginViewController.swift */,
-				8406AF082405821000578667 /* LoginWireframeError.swift */,
-				8406AF092405821000578667 /* LoginPresenterDependencies.swift */,
-				8406AF0A2405821000578667 /* LoginInteractor.swift */,
 				8406AF0B2405821000578667 /* LoginDelegateProtocol.swift */,
 				8406AF0C2405821000578667 /* LoginEvent.swift */,
-				8406AF0D2405821000578667 /* LoginView.swift */,
+				8406AF0A2405821000578667 /* LoginInteractor.swift */,
+				8406AF012405821000578667 /* LoginInteractorDependencies.swift */,
+				8406AF032405821000578667 /* LoginPresenter.swift */,
+				8406AF092405821000578667 /* LoginPresenterDependencies.swift */,
 				8406AF0E2405821000578667 /* LoginProtocol.swift */,
+				8406AF062405821000578667 /* LoginRoute.swift */,
+				8406AF042405821000578667 /* LoginRouter.swift */,
+				8406AF052405821000578667 /* LoginRouterDependencies.swift */,
+				8406AF0D2405821000578667 /* LoginView.swift */,
+				8406AF072405821000578667 /* LoginViewController.swift */,
 				8406AF0F2405821000578667 /* LoginWireframe.swift */,
+				8406AF082405821000578667 /* LoginWireframeError.swift */,
 			);
-			path = Refactor_Login;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		8406AF372405920B00578667 /* Extensions */ = {
@@ -341,6 +344,28 @@
 				8406AF382405922B00578667 /* LoginModule+UIDevice.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8406AF3B2407F88800578667 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF3F2407F8B600578667 /* SignupAction.swift */,
+				8406AF482407F8B600578667 /* SignupDelegateProtocol.swift */,
+				8406AF492407F8B600578667 /* SignupEvent.swift */,
+				8406AF472407F8B600578667 /* SignupInteractor.swift */,
+				8406AF3E2407F8B600578667 /* SignupInteractorDependencies.swift */,
+				8406AF402407F8B600578667 /* SignupPresenter.swift */,
+				8406AF462407F8B600578667 /* SignupPresenterDependencies.swift */,
+				8406AF4B2407F8B600578667 /* SignupProtocol.swift */,
+				8406AF432407F8B600578667 /* SignupRoute.swift */,
+				8406AF412407F8B600578667 /* SignupRouter.swift */,
+				8406AF422407F8B600578667 /* SignupRouterDependencies.swift */,
+				8406AF4A2407F8B600578667 /* SignupView.swift */,
+				8406AF442407F8B600578667 /* SignupViewController.swift */,
+				8406AF4C2407F8B600578667 /* SignupWireframe.swift */,
+				8406AF452407F8B600578667 /* SignupWireframeError.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 		840BF6C423FFF2EB00E9D734 /* View */ = {
@@ -453,62 +478,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		8485844E23FC23ED00D190AF /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC723FC17DE00AB519F /* SignUpConfigurator.swift */,
-			);
-			name = Configurator;
-			sourceTree = "<group>";
-		};
-		8485844F23FC23F400D190AF /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC223FC17DE00AB519F /* SignUpPresenter.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		8485845023FC23F900D190AF /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC323FC17DE00AB519F /* SignUpRouter.swift */,
-			);
-			name = Router;
-			sourceTree = "<group>";
-		};
-		8485845123FC23FE00D190AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8485845523FC242B00D190AF /* SignUpView.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		8485845223FC240200D190AF /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC423FC17DE00AB519F /* SignUpViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		8485845323FC240700D190AF /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC623FC17DE00AB519F /* SignUpInteractor.swift */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		8485845423FC241700D190AF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC523FC17DE00AB519F /* SignUpProtocols.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
 		8485845723FC28A100D190AF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +579,7 @@
 		84C74C3F23FBF98E00AB519F /* VIPER-Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				8406AF3A2407C8F000578667 /* VIPER-Recipes.entitlements */,
 				8406AF372405920B00578667 /* Extensions */,
 				84216C3323FD4BEF00AB40A4 /* Services */,
 				84C74C6523FBFB9800AB519F /* Helpers */,
@@ -675,15 +645,14 @@
 		84C74C6423FBFB8F00AB519F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8406AF00240581E900578667 /* Refactor_Login */,
+				8406AF3B2407F88800578667 /* Signup */,
+				8406AF00240581E900578667 /* Login */,
 				84216C3C23FD658300AB40A4 /* NewRecipe */,
 				8485846223FC2B1000D190AF /* More */,
 				8485846123FC2B0A00D190AF /* Grocery */,
 				8485846023FC2B0200D190AF /* Recipes */,
 				8485845F23FC2AFE00D190AF /* Saves */,
 				84C74C6823FBFBB700AB519F /* MainTabBar */,
-				84C74C6723FBFBAC00AB519F /* SignUp */,
-				84C74C6623FBFBA400AB519F /* LogIn */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -698,34 +667,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		84C74C6623FBFBA400AB519F /* LogIn */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CBE23FC0D0900AB519F /* Configurator */,
-				84C74C7D23FBFF2F00AB519F /* Interactor */,
-				84C74C7E23FBFF3500AB519F /* Presenter */,
-				84C74C7F23FBFF3B00AB519F /* Protocols */,
-				84C74C8123FC001000AB519F /* Router */,
-				84C74CBF23FC0D6000AB519F /* View */,
-				84C74C8023FC000500AB519F /* ViewController */,
-			);
-			path = LogIn;
-			sourceTree = "<group>";
-		};
-		84C74C6723FBFBAC00AB519F /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				8485844E23FC23ED00D190AF /* Configurator */,
-				8485845323FC240700D190AF /* Interactor */,
-				8485844F23FC23F400D190AF /* Presenter */,
-				8485845423FC241700D190AF /* Protocols */,
-				8485845023FC23F900D190AF /* Router */,
-				8485845123FC23FE00D190AF /* View */,
-				8485845223FC240200D190AF /* ViewController */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
 		84C74C6823FBFBB700AB519F /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,62 +674,6 @@
 				8485845723FC28A100D190AF /* ViewController */,
 			);
 			path = MainTabBar;
-			sourceTree = "<group>";
-		};
-		84C74C7D23FBFF2F00AB519F /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CB623FC0CD700AB519F /* LogInInteractor.swift */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		84C74C7E23FBFF3500AB519F /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CB223FC0CD700AB519F /* LogInPresenter.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		84C74C7F23FBFF3B00AB519F /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CB523FC0CD700AB519F /* LogInProtocols.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		84C74C8023FC000500AB519F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CB423FC0CD700AB519F /* LogInViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		84C74C8123FC001000AB519F /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CB323FC0CD700AB519F /* LogInRouter.swift */,
-			);
-			name = Router;
-			sourceTree = "<group>";
-		};
-		84C74CBE23FC0D0900AB519F /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CB723FC0CD700AB519F /* LogInConfigurator.swift */,
-			);
-			name = Configurator;
-			sourceTree = "<group>";
-		};
-		84C74CBF23FC0D6000AB519F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				84C74CC023FC0D7100AB519F /* LogInView.swift */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		84E9802423FEA7B7004E8FF0 /* Alert */ = {
@@ -939,15 +824,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8485849B23FC2EFB00D190AF /* MoreViewController.swift in Sources */,
+				8406AF4F2407F8B600578667 /* SignupPresenter.swift in Sources */,
 				84216C6523FD68AF00AB40A4 /* NewRecipeInteractor.swift in Sources */,
-				84C74CB823FC0CD700AB519F /* LogInPresenter.swift in Sources */,
+				8406AF4D2407F8B600578667 /* SignupInteractorDependencies.swift in Sources */,
 				8485848223FC2EDF00D190AF /* GroceryRouter.swift in Sources */,
-				84C74CBA23FC0CD700AB519F /* LogInViewController.swift in Sources */,
 				8406AF192405821000578667 /* LoginInteractor.swift in Sources */,
 				8406AF132405821000578667 /* LoginRouter.swift in Sources */,
 				8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */,
 				8485846923FC2EC200D190AF /* SavesPresenter.swift in Sources */,
-				84C74CBB23FC0CD700AB519F /* LogInProtocols.swift in Sources */,
+				8406AF552407F8B600578667 /* SignupPresenterDependencies.swift in Sources */,
 				8485849E23FC2EFB00D190AF /* MoreConfigurator.swift in Sources */,
 				8485849223FC2EEE00D190AF /* RecipesConfigurator.swift in Sources */,
 				8485849C23FC2EFB00D190AF /* MoreProtocols.swift in Sources */,
@@ -958,59 +843,60 @@
 				8485848623FC2EDF00D190AF /* GroceryConfigurator.swift in Sources */,
 				8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */,
 				84216C6223FD68AF00AB40A4 /* NewRecipeRouter.swift in Sources */,
+				8406AF582407F8B600578667 /* SignupEvent.swift in Sources */,
 				84C74C8523FC03CF00AB519F /* Colors.swift in Sources */,
 				8406AF122405821000578667 /* LoginPresenter.swift in Sources */,
 				84216C6423FD68AF00AB40A4 /* NewRecipeProtocols.swift in Sources */,
 				840BF6CC23FFF37400E9D734 /* MoreView.swift in Sources */,
+				8406AF572407F8B600578667 /* SignupDelegateProtocol.swift in Sources */,
 				8485849D23FC2EFB00D190AF /* MoreInteractor.swift in Sources */,
 				84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */,
 				84C74C8723FC03CF00AB519F /* Utilities.swift in Sources */,
-				84C74CCB23FC17DE00AB519F /* SignUpProtocols.swift in Sources */,
-				84C74CCA23FC17DE00AB519F /* SignUpViewController.swift in Sources */,
+				8406AF542407F8B600578667 /* SignupWireframeError.swift in Sources */,
 				84216C3823FD4C2700AB40A4 /* DataCoordinator.swift in Sources */,
 				8406AF152405821000578667 /* LoginRoute.swift in Sources */,
 				8406AF1C2405821000578667 /* LoginView.swift in Sources */,
 				8485848D23FC2EEE00D190AF /* RecipesPresenter.swift in Sources */,
 				8406AF1B2405821000578667 /* LoginEvent.swift in Sources */,
 				8485849923FC2EFB00D190AF /* MorePresenter.swift in Sources */,
-				84C74CC923FC17DE00AB519F /* SignUpRouter.swift in Sources */,
 				8485848E23FC2EEE00D190AF /* RecipesRouter.swift in Sources */,
+				8406AF502407F8B600578667 /* SignupRouter.swift in Sources */,
 				8406AF1A2405821000578667 /* LoginDelegateProtocol.swift in Sources */,
 				8485849023FC2EEE00D190AF /* RecipesProtocols.swift in Sources */,
-				84C74CB923FC0CD700AB519F /* LogInRouter.swift in Sources */,
+				8406AF4E2407F8B600578667 /* SignupAction.swift in Sources */,
 				848584A123FC33C400D190AF /* SavesLocalCell.swift in Sources */,
 				84C74C8623FC03CF00AB519F /* Fonts.swift in Sources */,
-				8485845623FC242B00D190AF /* SignUpView.swift in Sources */,
-				84C74CCD23FC17DE00AB519F /* SignUpConfigurator.swift in Sources */,
+				8406AF562407F8B600578667 /* SignupInteractor.swift in Sources */,
+				8406AF522407F8B600578667 /* SignupRoute.swift in Sources */,
 				8485849123FC2EEE00D190AF /* RecipesInteractor.swift in Sources */,
 				8485846A23FC2EC200D190AF /* SavesRouter.swift in Sources */,
 				8485848123FC2EDF00D190AF /* GroceryPresenter.swift in Sources */,
+				8406AF5A2407F8B600578667 /* SignupProtocol.swift in Sources */,
 				8406AF1D2405821000578667 /* LoginProtocol.swift in Sources */,
 				8485848323FC2EDF00D190AF /* GroceryViewController.swift in Sources */,
+				8406AF512407F8B600578667 /* SignupRouterDependencies.swift in Sources */,
 				8485848523FC2EDF00D190AF /* GroceryInteractor.swift in Sources */,
 				84C74C4123FBF98E00AB519F /* AppDelegate.swift in Sources */,
-				84C74CC123FC0D7100AB519F /* LogInView.swift in Sources */,
 				8406AF172405821000578667 /* LoginWireframeError.swift in Sources */,
+				8406AF5B2407F8B600578667 /* SignupWireframe.swift in Sources */,
 				8485846C23FC2EC200D190AF /* SavesProtocols.swift in Sources */,
 				84216C6323FD68AF00AB40A4 /* NewRecipeViewController.swift in Sources */,
 				8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */,
 				84216C6123FD68AF00AB40A4 /* NewRecipePresenter.swift in Sources */,
+				8406AF592407F8B600578667 /* SignupView.swift in Sources */,
 				84E9802723FEA7D2004E8FF0 /* AlertService.swift in Sources */,
 				84216C6623FD68AF00AB40A4 /* NewRecipeConfigurator.swift in Sources */,
 				8485846D23FC2EC200D190AF /* SavesInteractor.swift in Sources */,
-				84C74CBC23FC0CD700AB519F /* LogInInteractor.swift in Sources */,
 				8406AF1E2405821000578667 /* LoginWireframe.swift in Sources */,
 				8406AF162405821000578667 /* LoginViewController.swift in Sources */,
 				84C74C4323FBF98E00AB519F /* SceneDelegate.swift in Sources */,
 				8406AF112405821000578667 /* LoginAction.swift in Sources */,
 				8406AF182405821000578667 /* LoginPresenterDependencies.swift in Sources */,
 				84C74C5C23FBFB0500AB519F /* TextField.swift in Sources */,
-				84C74CBD23FC0CD700AB519F /* LogInConfigurator.swift in Sources */,
 				8406AF142405821000578667 /* LoginRouterDependencies.swift in Sources */,
 				8485846B23FC2EC200D190AF /* SavesViewController.swift in Sources */,
-				84C74CC823FC17DE00AB519F /* SignUpPresenter.swift in Sources */,
-				84C74CCC23FC17DE00AB519F /* SignUpInteractor.swift in Sources */,
 				8406AF102405821000578667 /* LoginInteractorDependencies.swift in Sources */,
+				8406AF532407F8B600578667 /* SignupViewController.swift in Sources */,
 				8485848F23FC2EEE00D190AF /* RecipesViewController.swift in Sources */,
 				84C74C5E23FBFB2800AB519F /* SegmentControl.swift in Sources */,
 			);
@@ -1150,6 +1036,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_ENTITLEMENTS = "VIPER-Recipes/VIPER-Recipes.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z76F7M3L8T;
 				INFOPLIST_FILE = "VIPER-Recipes/Info.plist";
@@ -1170,6 +1057,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_ENTITLEMENTS = "VIPER-Recipes/VIPER-Recipes.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z76F7M3L8T;
 				INFOPLIST_FILE = "VIPER-Recipes/Info.plist";

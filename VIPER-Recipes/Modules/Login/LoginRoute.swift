@@ -9,5 +9,6 @@
 import UIKit
 
 enum LoginRoute {
-    
+    case main
+    case createAnAccount
 }

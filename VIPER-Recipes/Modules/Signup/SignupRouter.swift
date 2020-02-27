@@ -1,31 +1,31 @@
 //
-//  LoginRouter.swift
+//  SignupRouter.swift
 //  VIPER-Recipes
 //
-//  Created admin on 25.02.2020.
+//  Created admin on 27.02.2020.
 //  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
 import UIKit
 
-protocol LoginRouterProtocol {
-    func navigate(toRoute route: LoginRoute)
+protocol SignupRouterProtocol {
+    func navigate(toRoute route: SignupRoute)
     func dismiss(animated: Bool)
 }
 
-final class LoginRouter {
-    private let dependencies: LoginRouterDependenciesProtocol
+final class SignupRouter {
+    private let dependencies: SignupRouterDependenciesProtocol
     private weak var viewController: UIViewController?
 
-    init(dependencies: LoginRouterDependenciesProtocol,
+    init(dependencies: SignupRouterDependenciesProtocol,
     	 viewController: UIViewController?) {
         self.dependencies = dependencies
         self.viewController = viewController
     }
 }
 
-extension LoginRouter: LoginRouterProtocol {
-	func navigate(toRoute route: LoginRoute) {
+extension SignupRouter: SignupRouterProtocol {
+	func navigate(toRoute route: SignupRoute) {
         switch route {
             default: ()
         }

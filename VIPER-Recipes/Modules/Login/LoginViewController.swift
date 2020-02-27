@@ -18,6 +18,7 @@ final class LoginViewController: UIViewController {
     private lazy var rootView: (UIView & LoginViewViewProtocol) = {
         let view = LoginView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
         return view
     }()
     
@@ -35,6 +36,16 @@ extension LoginViewController: LoginViewProtocol {
 }
 
 extension LoginViewController: LoginProtocol {
+    func getEmailTextField() -> UITextField {
+        let tf = (rootView as LoginViewViewProtocol).getEmailTextField()
+        return tf
+    }
+    
+    func getPasswordtextField() -> UITextField {
+        let tf = (rootView as LoginViewViewProtocol).getPasswordTextField()
+        return tf
+    }
+    
   
 }
 
@@ -58,6 +69,20 @@ extension LoginViewController {
 
     private func setColors() {
         view.backgroundColor = .white
+    }
+}
+
+extension LoginViewController: LoginViewDelegate {
+    func didSignin() {
+        presenter?.didTriggerAction(.signIn)
+    }
+    
+    func didSigninWithApple() {
+        presenter?.didTriggerAction(.signInWithApple)
+    }
+    
+    func didCreateAnAccount() {
+        presenter?.didTriggerAction(.createAnAccount)
     }
 }
 

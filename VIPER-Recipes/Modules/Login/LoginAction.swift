@@ -9,5 +9,7 @@
 import UIKit
 
 enum LoginAction {
-    
+    case signIn
+    case signInWithApple
+    case createAnAccount
 }

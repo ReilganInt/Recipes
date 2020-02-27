@@ -6,8 +6,9 @@
 //  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol LoginProtocol: class {
-
+    func getEmailTextField() -> UITextField
+    func getPasswordtextField() -> UITextField
 }
