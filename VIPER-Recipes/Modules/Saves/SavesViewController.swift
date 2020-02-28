@@ -46,6 +46,8 @@ class SavesViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SavesLocalCell.id, for: indexPath)
         guard let savesCell = cell as? SavesLocalCell else { return cell }
         savesCell.nameLabel.text = dataCache[indexPath.row].name
+        guard let imageData = dataCache[indexPath.row].image else { return cell }
+        savesCell.imageView.image = UIImage(data: imageData)
         savesCell.ratingView.text = String(dataCache[indexPath.row].stars)
         return cell
     }
@@ -59,13 +61,17 @@ class SavesViewController: UICollectionViewController {
     }
     
     @objc private func addNewRecipe(sender: UIBarButtonItem) {
-        let vc = NewRecipeConfigurator.createModule()
+        let vc = NewRecipeWireframe.makeViewController(delegate: self)
         let nc = UINavigationController(rootViewController: vc)
         nc.modalPresentationStyle = .overFullScreen
         present(nc, animated: true)
     }
     
     
+    
+}
+
+extension SavesViewController: NewRecipeDelegateProtocol {
     
 }
 
@@ -79,9 +85,9 @@ extension SavesViewController: SavesViewProtocol {
     
 }
 
-extension SavesViewController: NewRecipeViewControllerDelegate {
-    func didAddNewRecipe() {
-        collectionView.reloadData()
-    }
-
-}
+//extension SavesViewController: NewRecipeViewControllerDelegate {
+//    func didAddNewRecipe() {
+//        collectionView.reloadData()
+//    }
+//
+//}
