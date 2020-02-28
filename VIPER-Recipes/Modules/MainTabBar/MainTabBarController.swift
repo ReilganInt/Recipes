@@ -98,7 +98,7 @@ open class MainTabBarController: UITabBarController {
     }
     
     private func configureViewControllers() {
-        let savesNavigationController = createNavigationController(to: SavesConfigurator.createModule(), UIImage(named: "Icons/bursts")!, "Saves")
+        let savesNavigationController = createNavigationController(to: SavesWireframe.makeViewController(delegate: nil), UIImage(named: "Icons/bursts")!, "Saves")
         let recipesNavigationController = createNavigationController(to: RecipesConfigurator.createModule(), UIImage(named: "Icons/chef-hat")!, "Recipes")
         let groceryNavigationController = createNavigationController(to: GroceryConfigurator.createModule(), UIImage(named: "Icons/ingredients")!, "Grocery")
         let moreNavigationController = createNavigationController(to: MoreConfigurator.createModule(), UIImage(named: "Icons/menu")!, "More")

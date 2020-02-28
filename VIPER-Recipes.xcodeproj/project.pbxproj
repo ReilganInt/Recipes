@@ -60,12 +60,7 @@
 		8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845923FC28C700D190AF /* MainTabBarController.swift */; };
 		8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845B23FC290C00D190AF /* MainTabBar.swift */; };
 		8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485845D23FC294100D190AF /* MainTabBarButton.swift */; };
-		8485846923FC2EC200D190AF /* SavesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846323FC2EC200D190AF /* SavesPresenter.swift */; };
-		8485846A23FC2EC200D190AF /* SavesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846423FC2EC200D190AF /* SavesRouter.swift */; };
-		8485846B23FC2EC200D190AF /* SavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846523FC2EC200D190AF /* SavesViewController.swift */; };
-		8485846C23FC2EC200D190AF /* SavesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846623FC2EC200D190AF /* SavesProtocols.swift */; };
-		8485846D23FC2EC200D190AF /* SavesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846723FC2EC200D190AF /* SavesInteractor.swift */; };
-		8485846E23FC2EC200D190AF /* SavesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846823FC2EC200D190AF /* SavesConfigurator.swift */; };
+		8485846B23FC2EC200D190AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485846523FC2EC200D190AF /* ViewController.swift */; };
 		8485848123FC2EDF00D190AF /* GroceryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485847B23FC2EDF00D190AF /* GroceryPresenter.swift */; };
 		8485848223FC2EDF00D190AF /* GroceryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485847C23FC2EDF00D190AF /* GroceryRouter.swift */; };
 		8485848323FC2EDF00D190AF /* GroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485847D23FC2EDF00D190AF /* GroceryViewController.swift */; };
@@ -101,6 +96,21 @@
 		84899E3E2408DCC8006D7EF3 /* NewRecipeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84899E2F2408DCC8006D7EF3 /* NewRecipeProtocol.swift */; };
 		84899E3F2408DCC8006D7EF3 /* NewRecipeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84899E302408DCC8006D7EF3 /* NewRecipeWireframe.swift */; };
 		84C2C7582408E27A00C3052B /* NewRecipePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7572408E27A00C3052B /* NewRecipePicker.swift */; };
+		84C2C7692409044A00C3052B /* SavesInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C75A2409044A00C3052B /* SavesInteractorDependencies.swift */; };
+		84C2C76A2409044A00C3052B /* SavesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C75B2409044A00C3052B /* SavesAction.swift */; };
+		84C2C76B2409044A00C3052B /* SavesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C75C2409044A00C3052B /* SavesPresenter.swift */; };
+		84C2C76C2409044A00C3052B /* SavesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C75D2409044A00C3052B /* SavesRouter.swift */; };
+		84C2C76D2409044A00C3052B /* SavesRouterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C75E2409044A00C3052B /* SavesRouterDependencies.swift */; };
+		84C2C76E2409044A00C3052B /* SavesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C75F2409044A00C3052B /* SavesRoute.swift */; };
+		84C2C76F2409044A00C3052B /* SavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7602409044A00C3052B /* SavesViewController.swift */; };
+		84C2C7702409044A00C3052B /* SavesWireframeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7612409044A00C3052B /* SavesWireframeError.swift */; };
+		84C2C7712409044A00C3052B /* SavesPresenterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7622409044A00C3052B /* SavesPresenterDependencies.swift */; };
+		84C2C7722409044A00C3052B /* SavesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7632409044A00C3052B /* SavesInteractor.swift */; };
+		84C2C7732409044A00C3052B /* SavesDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7642409044A00C3052B /* SavesDelegateProtocol.swift */; };
+		84C2C7742409044A00C3052B /* SavesEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7652409044A00C3052B /* SavesEvent.swift */; };
+		84C2C7752409044A00C3052B /* SavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7662409044A00C3052B /* SavesView.swift */; };
+		84C2C7762409044A00C3052B /* SavesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7672409044A00C3052B /* SavesProtocol.swift */; };
+		84C2C7772409044A00C3052B /* SavesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2C7682409044A00C3052B /* SavesWireframe.swift */; };
 		84C74C4123FBF98E00AB519F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74C4023FBF98E00AB519F /* AppDelegate.swift */; };
 		84C74C4323FBF98E00AB519F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C74C4223FBF98E00AB519F /* SceneDelegate.swift */; };
 		84C74C4A23FBF98F00AB519F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C74C4923FBF98F00AB519F /* Assets.xcassets */; };
@@ -217,12 +227,7 @@
 		8485845923FC28C700D190AF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8485845B23FC290C00D190AF /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		8485845D23FC294100D190AF /* MainTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarButton.swift; sourceTree = "<group>"; };
-		8485846323FC2EC200D190AF /* SavesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesPresenter.swift; sourceTree = "<group>"; };
-		8485846423FC2EC200D190AF /* SavesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRouter.swift; sourceTree = "<group>"; };
-		8485846523FC2EC200D190AF /* SavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesViewController.swift; sourceTree = "<group>"; };
-		8485846623FC2EC200D190AF /* SavesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesProtocols.swift; sourceTree = "<group>"; };
-		8485846723FC2EC200D190AF /* SavesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesInteractor.swift; sourceTree = "<group>"; };
-		8485846823FC2EC200D190AF /* SavesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesConfigurator.swift; sourceTree = "<group>"; };
+		8485846523FC2EC200D190AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8485847B23FC2EDF00D190AF /* GroceryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryPresenter.swift; sourceTree = "<group>"; };
 		8485847C23FC2EDF00D190AF /* GroceryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryRouter.swift; sourceTree = "<group>"; };
 		8485847D23FC2EDF00D190AF /* GroceryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryViewController.swift; sourceTree = "<group>"; };
@@ -241,7 +246,7 @@
 		8485849623FC2EFB00D190AF /* MoreProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreProtocols.swift; sourceTree = "<group>"; };
 		8485849723FC2EFB00D190AF /* MoreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInteractor.swift; sourceTree = "<group>"; };
 		8485849823FC2EFB00D190AF /* MoreConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreConfigurator.swift; sourceTree = "<group>"; };
-		848584A023FC33C400D190AF /* SavesLocalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesLocalCell.swift; sourceTree = "<group>"; };
+		848584A023FC33C400D190AF /* SavesLocalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SavesLocalCell.swift; path = ../../Modules/Saves/SavesLocalCell.swift; sourceTree = "<group>"; };
 		84899E222408DCC8006D7EF3 /* NewRecipeInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeInteractorDependencies.swift; sourceTree = "<group>"; };
 		84899E232408DCC8006D7EF3 /* NewRecipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeAction.swift; sourceTree = "<group>"; };
 		84899E242408DCC8006D7EF3 /* NewRecipePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipePresenter.swift; sourceTree = "<group>"; };
@@ -258,6 +263,21 @@
 		84899E2F2408DCC8006D7EF3 /* NewRecipeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeProtocol.swift; sourceTree = "<group>"; };
 		84899E302408DCC8006D7EF3 /* NewRecipeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeWireframe.swift; sourceTree = "<group>"; };
 		84C2C7572408E27A00C3052B /* NewRecipePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipePicker.swift; sourceTree = "<group>"; };
+		84C2C75A2409044A00C3052B /* SavesInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesInteractorDependencies.swift; sourceTree = "<group>"; };
+		84C2C75B2409044A00C3052B /* SavesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesAction.swift; sourceTree = "<group>"; };
+		84C2C75C2409044A00C3052B /* SavesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesPresenter.swift; sourceTree = "<group>"; };
+		84C2C75D2409044A00C3052B /* SavesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRouter.swift; sourceTree = "<group>"; };
+		84C2C75E2409044A00C3052B /* SavesRouterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRouterDependencies.swift; sourceTree = "<group>"; };
+		84C2C75F2409044A00C3052B /* SavesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRoute.swift; sourceTree = "<group>"; };
+		84C2C7602409044A00C3052B /* SavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesViewController.swift; sourceTree = "<group>"; };
+		84C2C7612409044A00C3052B /* SavesWireframeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesWireframeError.swift; sourceTree = "<group>"; };
+		84C2C7622409044A00C3052B /* SavesPresenterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesPresenterDependencies.swift; sourceTree = "<group>"; };
+		84C2C7632409044A00C3052B /* SavesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesInteractor.swift; sourceTree = "<group>"; };
+		84C2C7642409044A00C3052B /* SavesDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesDelegateProtocol.swift; sourceTree = "<group>"; };
+		84C2C7652409044A00C3052B /* SavesEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesEvent.swift; sourceTree = "<group>"; };
+		84C2C7662409044A00C3052B /* SavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesView.swift; sourceTree = "<group>"; };
+		84C2C7672409044A00C3052B /* SavesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesProtocol.swift; sourceTree = "<group>"; };
+		84C2C7682409044A00C3052B /* SavesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesWireframe.swift; sourceTree = "<group>"; };
 		84C74C3D23FBF98E00AB519F /* VIPER-Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C74C4023FBF98E00AB519F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C74C4223FBF98E00AB519F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -517,13 +537,7 @@
 		8485845F23FC2AFE00D190AF /* Saves */ = {
 			isa = PBXGroup;
 			children = (
-				8485849F23FC33A800D190AF /* View */,
-				8485846323FC2EC200D190AF /* SavesPresenter.swift */,
-				8485846423FC2EC200D190AF /* SavesRouter.swift */,
-				8485846523FC2EC200D190AF /* SavesViewController.swift */,
-				8485846623FC2EC200D190AF /* SavesProtocols.swift */,
-				8485846723FC2EC200D190AF /* SavesInteractor.swift */,
-				8485846823FC2EC200D190AF /* SavesConfigurator.swift */,
+				8485846523FC2EC200D190AF /* ViewController.swift */,
 			);
 			path = Saves;
 			sourceTree = "<group>";
@@ -568,14 +582,6 @@
 			path = More;
 			sourceTree = "<group>";
 		};
-		8485849F23FC33A800D190AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				848584A023FC33C400D190AF /* SavesLocalCell.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 		84899E212408DC8D006D7EF3 /* NewRecipe */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,6 +603,60 @@
 				84C2C7572408E27A00C3052B /* NewRecipePicker.swift */,
 			);
 			path = NewRecipe;
+			sourceTree = "<group>";
+		};
+		84C2C759240902D700C3052B /* Saves_refactor */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C75B2409044A00C3052B /* SavesAction.swift */,
+				84C2C7642409044A00C3052B /* SavesDelegateProtocol.swift */,
+				84C2C7652409044A00C3052B /* SavesEvent.swift */,
+				84C2C7632409044A00C3052B /* SavesInteractor.swift */,
+				84C2C75A2409044A00C3052B /* SavesInteractorDependencies.swift */,
+				84C2C75C2409044A00C3052B /* SavesPresenter.swift */,
+				84C2C7622409044A00C3052B /* SavesPresenterDependencies.swift */,
+				84C2C7672409044A00C3052B /* SavesProtocol.swift */,
+				84C2C75F2409044A00C3052B /* SavesRoute.swift */,
+				84C2C75D2409044A00C3052B /* SavesRouter.swift */,
+				84C2C75E2409044A00C3052B /* SavesRouterDependencies.swift */,
+				84C2C7662409044A00C3052B /* SavesView.swift */,
+				84C2C7602409044A00C3052B /* SavesViewController.swift */,
+				84C2C7682409044A00C3052B /* SavesWireframe.swift */,
+				84C2C7612409044A00C3052B /* SavesWireframeError.swift */,
+			);
+			path = Saves_refactor;
+			sourceTree = "<group>";
+		};
+		84C2C7782409046600C3052B /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				84C74C5B23FBFB0500AB519F /* TextField.swift */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		84C2C77A2409047300C3052B /* SegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				84C74C5D23FBFB2800AB519F /* SegmentControl.swift */,
+			);
+			name = SegmentControl;
+			sourceTree = "<group>";
+		};
+		84C2C77B2409048000C3052B /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C77C2409048D00C3052B /* Saves */,
+			);
+			name = CollectionCell;
+			sourceTree = "<group>";
+		};
+		84C2C77C2409048D00C3052B /* Saves */ = {
+			isa = PBXGroup;
+			children = (
+				848584A023FC33C400D190AF /* SavesLocalCell.swift */,
+			);
+			name = Saves;
 			sourceTree = "<group>";
 		};
 		84C74C3423FBF98E00AB519F = {
@@ -657,8 +717,9 @@
 		84C74C5823FBFAC600AB519F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84C74C5B23FBFB0500AB519F /* TextField.swift */,
-				84C74C5D23FBFB2800AB519F /* SegmentControl.swift */,
+				84C2C77B2409048000C3052B /* CollectionCell */,
+				84C2C77A2409047300C3052B /* SegmentControl */,
+				84C2C7782409046600C3052B /* TextField */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -687,6 +748,7 @@
 		84C74C6423FBFB8F00AB519F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				84C2C759240902D700C3052B /* Saves_refactor */,
 				84899E212408DC8D006D7EF3 /* NewRecipe */,
 				8406AF5C24080BCC00578667 /* Authentication */,
 				8406AF3B2407F88800578667 /* Signup */,
@@ -870,6 +932,7 @@
 				8485849B23FC2EFB00D190AF /* MoreViewController.swift in Sources */,
 				8406AF4F2407F8B600578667 /* SignupPresenter.swift in Sources */,
 				84899E382408DCC8006D7EF3 /* NewRecipeWireframeError.swift in Sources */,
+				84C2C7692409044A00C3052B /* SavesInteractorDependencies.swift in Sources */,
 				8406AF6024080E0400578667 /* ProgressHUD.swift in Sources */,
 				84899E392408DCC8006D7EF3 /* NewRecipePresenterDependencies.swift in Sources */,
 				8406AF4D2407F8B600578667 /* SignupInteractorDependencies.swift in Sources */,
@@ -877,8 +940,8 @@
 				8406AF192405821000578667 /* LoginInteractor.swift in Sources */,
 				8406AF132405821000578667 /* LoginRouter.swift in Sources */,
 				8485845A23FC28C700D190AF /* MainTabBarController.swift in Sources */,
-				8485846923FC2EC200D190AF /* SavesPresenter.swift in Sources */,
 				8406AF552407F8B600578667 /* SignupPresenterDependencies.swift in Sources */,
+				84C2C76D2409044A00C3052B /* SavesRouterDependencies.swift in Sources */,
 				8485849E23FC2EFB00D190AF /* MoreConfigurator.swift in Sources */,
 				8485849223FC2EEE00D190AF /* RecipesConfigurator.swift in Sources */,
 				84899E332408DCC8006D7EF3 /* NewRecipePresenter.swift in Sources */,
@@ -886,11 +949,12 @@
 				8406AF392405922B00578667 /* LoginModule+UIDevice.swift in Sources */,
 				8485849A23FC2EFB00D190AF /* MoreRouter.swift in Sources */,
 				8485848423FC2EDF00D190AF /* GroceryProtocols.swift in Sources */,
-				8485846E23FC2EC200D190AF /* SavesConfigurator.swift in Sources */,
 				8406AF5E24080C2500578667 /* AuthenticationViewController.swift in Sources */,
 				8485848623FC2EDF00D190AF /* GroceryConfigurator.swift in Sources */,
+				84C2C7752409044A00C3052B /* SavesView.swift in Sources */,
 				84899E342408DCC8006D7EF3 /* NewRecipeRouter.swift in Sources */,
 				8485845E23FC294100D190AF /* MainTabBarButton.swift in Sources */,
+				84C2C7732409044A00C3052B /* SavesDelegateProtocol.swift in Sources */,
 				84899E372408DCC8006D7EF3 /* NewRecipeViewController.swift in Sources */,
 				8406AF582407F8B600578667 /* SignupEvent.swift in Sources */,
 				84C74C8523FC03CF00AB519F /* Colors.swift in Sources */,
@@ -899,6 +963,7 @@
 				84899E3D2408DCC8006D7EF3 /* NewRecipeView.swift in Sources */,
 				8406AF572407F8B600578667 /* SignupDelegateProtocol.swift in Sources */,
 				8485849D23FC2EFB00D190AF /* MoreInteractor.swift in Sources */,
+				84C2C7702409044A00C3052B /* SavesWireframeError.swift in Sources */,
 				84216C3B23FD4F2400AB40A4 /* Recipes.xcdatamodeld in Sources */,
 				84C74C8723FC03CF00AB519F /* Utilities.swift in Sources */,
 				8406AF542407F8B600578667 /* SignupWireframeError.swift in Sources */,
@@ -913,19 +978,22 @@
 				84899E3B2408DCC8006D7EF3 /* NewRecipeDelegateProtocol.swift in Sources */,
 				8485848E23FC2EEE00D190AF /* RecipesRouter.swift in Sources */,
 				84899E352408DCC8006D7EF3 /* NewRecipeRouterDependencies.swift in Sources */,
+				84C2C76C2409044A00C3052B /* SavesRouter.swift in Sources */,
 				8406AF502407F8B600578667 /* SignupRouter.swift in Sources */,
 				8406AF1A2405821000578667 /* LoginDelegateProtocol.swift in Sources */,
 				8485849023FC2EEE00D190AF /* RecipesProtocols.swift in Sources */,
 				8406AF4E2407F8B600578667 /* SignupAction.swift in Sources */,
+				84C2C7772409044A00C3052B /* SavesWireframe.swift in Sources */,
 				848584A123FC33C400D190AF /* SavesLocalCell.swift in Sources */,
 				84899E3E2408DCC8006D7EF3 /* NewRecipeProtocol.swift in Sources */,
 				84C74C8623FC03CF00AB519F /* Fonts.swift in Sources */,
 				8406AF562407F8B600578667 /* SignupInteractor.swift in Sources */,
+				84C2C7742409044A00C3052B /* SavesEvent.swift in Sources */,
 				84899E3C2408DCC8006D7EF3 /* NewRecipeEvent.swift in Sources */,
 				8406AF522407F8B600578667 /* SignupRoute.swift in Sources */,
 				8485849123FC2EEE00D190AF /* RecipesInteractor.swift in Sources */,
 				84899E3F2408DCC8006D7EF3 /* NewRecipeWireframe.swift in Sources */,
-				8485846A23FC2EC200D190AF /* SavesRouter.swift in Sources */,
+				84C2C7762409044A00C3052B /* SavesProtocol.swift in Sources */,
 				8485848123FC2EDF00D190AF /* GroceryPresenter.swift in Sources */,
 				8406AF5A2407F8B600578667 /* SignupProtocol.swift in Sources */,
 				8406AF1D2405821000578667 /* LoginProtocol.swift in Sources */,
@@ -935,20 +1003,24 @@
 				84C74C4123FBF98E00AB519F /* AppDelegate.swift in Sources */,
 				8406AF172405821000578667 /* LoginWireframeError.swift in Sources */,
 				8406AF5B2407F8B600578667 /* SignupWireframe.swift in Sources */,
-				8485846C23FC2EC200D190AF /* SavesProtocols.swift in Sources */,
 				8485845C23FC290C00D190AF /* MainTabBar.swift in Sources */,
 				8406AF592407F8B600578667 /* SignupView.swift in Sources */,
 				84E9802723FEA7D2004E8FF0 /* AlertService.swift in Sources */,
-				8485846D23FC2EC200D190AF /* SavesInteractor.swift in Sources */,
+				84C2C76B2409044A00C3052B /* SavesPresenter.swift in Sources */,
 				8406AF1E2405821000578667 /* LoginWireframe.swift in Sources */,
 				8406AF162405821000578667 /* LoginViewController.swift in Sources */,
 				84C74C4323FBF98E00AB519F /* SceneDelegate.swift in Sources */,
 				8406AF112405821000578667 /* LoginAction.swift in Sources */,
+				84C2C76A2409044A00C3052B /* SavesAction.swift in Sources */,
 				8406AF182405821000578667 /* LoginPresenterDependencies.swift in Sources */,
 				84C74C5C23FBFB0500AB519F /* TextField.swift in Sources */,
+				84C2C7722409044A00C3052B /* SavesInteractor.swift in Sources */,
 				8406AF142405821000578667 /* LoginRouterDependencies.swift in Sources */,
 				84899E3A2408DCC8006D7EF3 /* NewRecipeInteractor.swift in Sources */,
-				8485846B23FC2EC200D190AF /* SavesViewController.swift in Sources */,
+				84C2C76F2409044A00C3052B /* SavesViewController.swift in Sources */,
+				84C2C7712409044A00C3052B /* SavesPresenterDependencies.swift in Sources */,
+				84C2C76E2409044A00C3052B /* SavesRoute.swift in Sources */,
+				8485846B23FC2EC200D190AF /* ViewController.swift in Sources */,
 				8406AF102405821000578667 /* LoginInteractorDependencies.swift in Sources */,
 				84C2C7582408E27A00C3052B /* NewRecipePicker.swift in Sources */,
 				84899E362408DCC8006D7EF3 /* NewRecipeRoute.swift in Sources */,
