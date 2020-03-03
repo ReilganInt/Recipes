@@ -6,7 +6,7 @@
 //  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol SavesInteractorProtocol {
 
@@ -17,6 +17,7 @@ final class SavesInteractor {
     
     init(dependencies: SavesInteractorDependenciesProtocol) {
         self.dependencies = dependencies
+        CGFloat.random(in: <#T##Range<CGFloat>#>)
     }
 }
 

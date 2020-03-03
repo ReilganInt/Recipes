@@ -52,8 +52,9 @@ extension LoginPresenter: LoginPresenterProtocol {
 
 extension LoginPresenter {
     fileprivate func signIn() {
-        let emailTF = view!.getEmailTextField()
-        let passwordTF = view!.getPasswordtextField()
+        guard let view = view else { return }
+        let emailTF = view.getEmailTextField()
+        let passwordTF = view.getPasswordtextField()
         interactor.signIn(emailTF, passwordTF, completion: { result in
             switch result {
             case .failure(let err):

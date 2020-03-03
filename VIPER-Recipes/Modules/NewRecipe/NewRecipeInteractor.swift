@@ -6,10 +6,10 @@
 //  Copyright © 2020 Rinat Kutuev. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol NewRecipeInteractorProtocol {
-
+    func save(name: String, imageData: Data, completion: @escaping (Result<Void, Error>) -> ())
 }
 
 final class NewRecipeInteractor {
@@ -21,5 +21,24 @@ final class NewRecipeInteractor {
 }
 
 extension NewRecipeInteractor: NewRecipeInteractorProtocol {
+    func save(name: String, imageData: Data, completion: @escaping (Result<Void, Error>) -> ()) {
+        DataCoordinator.performBackgroundTask { (context) -> (Void) in
+            let obj = Recipe(context: context)
+            obj.name = name
+            obj.image = imageData
+            obj.stars = Int32.random(in: 0..<5)
+            do {
+                if context.hasChanges {
+                    try context.save()
+                    completion(.success(()))
+                }
+            } catch {
+                // Error handler
+                print("exception saving in background thread")
+                completion(.failure(error))
+            }
+        }
+    }
+    
 	
 }

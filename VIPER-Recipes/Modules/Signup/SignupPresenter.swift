@@ -50,9 +50,10 @@ extension SignupPresenter: SignupPresenterProtocol {
 
 extension SignupPresenter {
     fileprivate func signup() {
-        let emailTF = view!.getEmailTextField()
-        let passTF = view!.getPasswordtextField()
-        let confirmPassTF = view!.getConfirmPasswordtextField()
+        guard let view = view else { return }
+        let emailTF = view.getEmailTextField()
+        let passTF = view.getPasswordtextField()
+        let confirmPassTF = view.getConfirmPasswordtextField()
         interactor.signUp(emailTF, passTF, confirmPassTF, completion: { result in
             switch result {
             case .failure(let error):

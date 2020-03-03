@@ -10,6 +10,8 @@ import UIKit
 
 protocol NewRecipeViewProtocol: NewRecipeProtocol {
     func setPresenter(_ presenter: NewRecipePresenterProtocol)
+    func getName() -> String?
+    func getImageData() -> Data?
 }
 
 final class NewRecipeViewController: UIViewController {
@@ -34,6 +36,14 @@ final class NewRecipeViewController: UIViewController {
 }
 
 extension NewRecipeViewController: NewRecipeViewProtocol {
+    func getName() -> String? {
+        return rootView.getNameTextField().text
+    }
+    
+    func getImageData() -> Data? {
+        return rootView.getRecipeImageView().image?.pngData()
+    }
+    
     func setPresenter(_ presenter: NewRecipePresenterProtocol) {
         self.presenter = presenter
     }
@@ -99,32 +109,11 @@ extension NewRecipeViewController: NewRecipeViewDelegate {
 
 extension NewRecipeViewController {
     @objc fileprivate func didSave() {
-        guard let name = rootView.getNameTextField().text else { return
-            // throw
-        }
-        guard let imageData = rootView.getRecipeImageView().image?.pngData() else { return
-            // throw
-        }
-        DataCoordinator.performBackgroundTask { (context) -> (Void) in
-            let obj = Recipe(context: context)
-            obj.name = name
-            obj.image = imageData
-            obj.stars = Int32.random(in: 0..<5)
-            do {
-                print(context.hasChanges)
-                try context.save()
-                print("saved changes")
-            } catch {
-                print("exception saving in background thread")
-            }
-        }
-        dismiss(animated: true) {
-            // Send alert to reload CollectionView
-        }
+        presenter?.didTriggerAction(.didSave)
     }
     
     @objc fileprivate func didBack() {
-        dismiss(animated: true, completion: nil)
+        presenter?.didTriggerAction(.dismiss)
     }
 }
 

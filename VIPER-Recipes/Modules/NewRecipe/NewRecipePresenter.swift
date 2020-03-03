@@ -43,7 +43,23 @@ extension NewRecipePresenter: NewRecipePresenterProtocol {
 
     func didTriggerAction(_ action: NewRecipeAction) {
         switch action {
-            default: ()
+        case .didSave:
+            guard let name = view?.getName() else { return
+                // throw
+            }
+            guard let imageData = view?.getImageData() else { return
+                // throw
+            }
+            interactor.save(name: name, imageData: imageData, completion: { result in
+                switch result {
+                case .failure(let error):
+                    print(error.localizedDescription)
+                case .success(_):
+                    self.router.dismiss(animated: true)
+                }
+            })
+        case .dismiss:
+            router.dismiss(animated: true)
         }
     }
 }

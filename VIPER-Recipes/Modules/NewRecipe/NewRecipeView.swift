@@ -74,6 +74,8 @@ extension NewRecipeView: NewRecipeViewViewProtocol {
         return recipeImangeView
     }
     
+    // FIXME: 3 - useless functions
+    
     func getTimeCellButton() -> UITableViewCell {
         return timePickerCellButton
     }

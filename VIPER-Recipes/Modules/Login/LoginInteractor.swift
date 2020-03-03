@@ -19,8 +19,11 @@ final class LoginInteractor {
     init(dependencies: LoginInteractorDependenciesProtocol) {
         self.dependencies = dependencies
     }
+}
+
+extension LoginInteractor: LoginInteractorProtocol {
     
-    func signIn(_ email: UITextField, _ password: UITextField, completion: @escaping (Result<Void, Error>) -> ()) {
+	func signIn(_ email: UITextField, _ password: UITextField, completion: @escaping (Result<Void, Error>) -> ()) {
         // Validate the fields
         let error = Utilities.validateFields(email, password)
         
@@ -42,6 +45,7 @@ final class LoginInteractor {
                     completion(.failure(err!))
                 }
                 else {
+                    // TODO: Delete UserDefaults and Use KeyChain!
                     let defaults = UserDefaults.standard
                     defaults.set(result?.user.uid, forKey: "UserUID")
                     completion(.success(()))
@@ -50,8 +54,5 @@ final class LoginInteractor {
             }
         }
     }
-}
-
-extension LoginInteractor: LoginInteractorProtocol {
-	
+    
 }

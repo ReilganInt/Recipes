@@ -363,21 +363,13 @@
 		8406AF00240581E900578667 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				8406AF022405821000578667 /* LoginAction.swift */,
-				8406AF0B2405821000578667 /* LoginDelegateProtocol.swift */,
-				8406AF0C2405821000578667 /* LoginEvent.swift */,
-				8406AF0A2405821000578667 /* LoginInteractor.swift */,
-				8406AF012405821000578667 /* LoginInteractorDependencies.swift */,
-				8406AF032405821000578667 /* LoginPresenter.swift */,
-				8406AF092405821000578667 /* LoginPresenterDependencies.swift */,
 				8406AF0E2405821000578667 /* LoginProtocol.swift */,
-				8406AF062405821000578667 /* LoginRoute.swift */,
-				8406AF042405821000578667 /* LoginRouter.swift */,
-				8406AF052405821000578667 /* LoginRouterDependencies.swift */,
-				8406AF0D2405821000578667 /* LoginView.swift */,
-				8406AF072405821000578667 /* LoginViewController.swift */,
-				8406AF0F2405821000578667 /* LoginWireframe.swift */,
-				8406AF082405821000578667 /* LoginWireframeError.swift */,
+				841387E3240E46DA00A53C0A /* Interactor */,
+				841387E2240E46D000A53C0A /* Presenter */,
+				841387DF240E46B300A53C0A /* Router */,
+				841387E0240E46BD00A53C0A /* View */,
+				841387E1240E46C800A53C0A /* ViewController */,
+				841387DE240E46A500A53C0A /* Wireframe */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -393,21 +385,13 @@
 		8406AF3B2407F88800578667 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				8406AF3F2407F8B600578667 /* SignupAction.swift */,
-				8406AF482407F8B600578667 /* SignupDelegateProtocol.swift */,
-				8406AF492407F8B600578667 /* SignupEvent.swift */,
-				8406AF472407F8B600578667 /* SignupInteractor.swift */,
-				8406AF3E2407F8B600578667 /* SignupInteractorDependencies.swift */,
-				8406AF402407F8B600578667 /* SignupPresenter.swift */,
-				8406AF462407F8B600578667 /* SignupPresenterDependencies.swift */,
 				8406AF4B2407F8B600578667 /* SignupProtocol.swift */,
-				8406AF432407F8B600578667 /* SignupRoute.swift */,
-				8406AF412407F8B600578667 /* SignupRouter.swift */,
-				8406AF422407F8B600578667 /* SignupRouterDependencies.swift */,
-				8406AF4A2407F8B600578667 /* SignupView.swift */,
-				8406AF442407F8B600578667 /* SignupViewController.swift */,
-				8406AF4C2407F8B600578667 /* SignupWireframe.swift */,
-				8406AF452407F8B600578667 /* SignupWireframeError.swift */,
+				841387E7240E48AE00A53C0A /* Interactor */,
+				841387E5240E488F00A53C0A /* Presenter */,
+				841387E6240E489900A53C0A /* Router */,
+				841387E8240E48B800A53C0A /* View */,
+				841387E9240E48BF00A53C0A /* ViewController */,
+				841387E4240E488400A53C0A /* Wireframe */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -474,6 +458,175 @@
 				8485849423FC2EFB00D190AF /* MoreRouter.swift */,
 			);
 			name = Router;
+			sourceTree = "<group>";
+		};
+		841387DE240E46A500A53C0A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF0F2405821000578667 /* LoginWireframe.swift */,
+				8406AF082405821000578667 /* LoginWireframeError.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		841387DF240E46B300A53C0A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF062405821000578667 /* LoginRoute.swift */,
+				8406AF042405821000578667 /* LoginRouter.swift */,
+				8406AF052405821000578667 /* LoginRouterDependencies.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		841387E0240E46BD00A53C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF0D2405821000578667 /* LoginView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		841387E1240E46C800A53C0A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF072405821000578667 /* LoginViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		841387E2240E46D000A53C0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF022405821000578667 /* LoginAction.swift */,
+				8406AF0B2405821000578667 /* LoginDelegateProtocol.swift */,
+				8406AF0C2405821000578667 /* LoginEvent.swift */,
+				8406AF032405821000578667 /* LoginPresenter.swift */,
+				8406AF092405821000578667 /* LoginPresenterDependencies.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		841387E3240E46DA00A53C0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF0A2405821000578667 /* LoginInteractor.swift */,
+				8406AF012405821000578667 /* LoginInteractorDependencies.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		841387E4240E488400A53C0A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF4C2407F8B600578667 /* SignupWireframe.swift */,
+				8406AF452407F8B600578667 /* SignupWireframeError.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		841387E5240E488F00A53C0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF3F2407F8B600578667 /* SignupAction.swift */,
+				8406AF482407F8B600578667 /* SignupDelegateProtocol.swift */,
+				8406AF492407F8B600578667 /* SignupEvent.swift */,
+				8406AF402407F8B600578667 /* SignupPresenter.swift */,
+				8406AF462407F8B600578667 /* SignupPresenterDependencies.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		841387E6240E489900A53C0A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF432407F8B600578667 /* SignupRoute.swift */,
+				8406AF412407F8B600578667 /* SignupRouter.swift */,
+				8406AF422407F8B600578667 /* SignupRouterDependencies.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		841387E7240E48AE00A53C0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF472407F8B600578667 /* SignupInteractor.swift */,
+				8406AF3E2407F8B600578667 /* SignupInteractorDependencies.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		841387E8240E48B800A53C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF4A2407F8B600578667 /* SignupView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		841387E9240E48BF00A53C0A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8406AF442407F8B600578667 /* SignupViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		841387EA240E522B00A53C0A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84899E302408DCC8006D7EF3 /* NewRecipeWireframe.swift */,
+				84899E292408DCC8006D7EF3 /* NewRecipeWireframeError.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		841387EB240E523600A53C0A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84899E272408DCC8006D7EF3 /* NewRecipeRoute.swift */,
+				84899E252408DCC8006D7EF3 /* NewRecipeRouter.swift */,
+				84899E262408DCC8006D7EF3 /* NewRecipeRouterDependencies.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		841387EC240E524500A53C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84899E2E2408DCC8006D7EF3 /* NewRecipeView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		841387ED240E524A00A53C0A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84899E282408DCC8006D7EF3 /* NewRecipeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		841387EE240E525300A53C0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84899E232408DCC8006D7EF3 /* NewRecipeAction.swift */,
+				84899E2C2408DCC8006D7EF3 /* NewRecipeDelegateProtocol.swift */,
+				84899E2D2408DCC8006D7EF3 /* NewRecipeEvent.swift */,
+				84C2C7572408E27A00C3052B /* NewRecipePicker.swift */,
+				84899E242408DCC8006D7EF3 /* NewRecipePresenter.swift */,
+				84899E2A2408DCC8006D7EF3 /* NewRecipePresenterDependencies.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		841387EF240E527200A53C0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84899E2B2408DCC8006D7EF3 /* NewRecipeInteractor.swift */,
+				84899E222408DCC8006D7EF3 /* NewRecipeInteractorDependencies.swift */,
+			);
+			name = Interactor;
 			sourceTree = "<group>";
 		};
 		84216C3323FD4BEF00AB40A4 /* Services */ = {
@@ -585,22 +738,13 @@
 		84899E212408DC8D006D7EF3 /* NewRecipe */ = {
 			isa = PBXGroup;
 			children = (
-				84899E232408DCC8006D7EF3 /* NewRecipeAction.swift */,
-				84899E2C2408DCC8006D7EF3 /* NewRecipeDelegateProtocol.swift */,
-				84899E2D2408DCC8006D7EF3 /* NewRecipeEvent.swift */,
-				84899E2B2408DCC8006D7EF3 /* NewRecipeInteractor.swift */,
-				84899E222408DCC8006D7EF3 /* NewRecipeInteractorDependencies.swift */,
-				84899E242408DCC8006D7EF3 /* NewRecipePresenter.swift */,
-				84899E2A2408DCC8006D7EF3 /* NewRecipePresenterDependencies.swift */,
 				84899E2F2408DCC8006D7EF3 /* NewRecipeProtocol.swift */,
-				84899E272408DCC8006D7EF3 /* NewRecipeRoute.swift */,
-				84899E252408DCC8006D7EF3 /* NewRecipeRouter.swift */,
-				84899E262408DCC8006D7EF3 /* NewRecipeRouterDependencies.swift */,
-				84899E2E2408DCC8006D7EF3 /* NewRecipeView.swift */,
-				84899E282408DCC8006D7EF3 /* NewRecipeViewController.swift */,
-				84899E302408DCC8006D7EF3 /* NewRecipeWireframe.swift */,
-				84899E292408DCC8006D7EF3 /* NewRecipeWireframeError.swift */,
-				84C2C7572408E27A00C3052B /* NewRecipePicker.swift */,
+				841387EF240E527200A53C0A /* Interactor */,
+				841387EE240E525300A53C0A /* Presenter */,
+				841387EB240E523600A53C0A /* Router */,
+				841387EC240E524500A53C0A /* View */,
+				841387ED240E524A00A53C0A /* ViewController */,
+				841387EA240E522B00A53C0A /* Wireframe */,
 			);
 			path = NewRecipe;
 			sourceTree = "<group>";

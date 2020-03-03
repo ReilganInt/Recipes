@@ -9,5 +9,6 @@
 import UIKit
 
 enum NewRecipeAction {
-    
+    case didSave
+    case dismiss
 }

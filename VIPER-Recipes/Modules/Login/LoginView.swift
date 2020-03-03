@@ -139,7 +139,7 @@ extension LoginView {
         passwordTextField.textContentType = .password
         passwordTextField.isSecureTextEntry = true
         passwordTextField.layer.cornerRadius = 15
-        passwordTextField.returnKeyType = .next
+        passwordTextField.returnKeyType = .done
     }
     
     fileprivate func addSigninButton() {
