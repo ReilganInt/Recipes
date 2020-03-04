@@ -55,7 +55,10 @@ extension NewRecipePresenter: NewRecipePresenterProtocol {
                 case .failure(let error):
                     print(error.localizedDescription)
                 case .success(_):
-                    self.router.dismiss(animated: true)
+                    DispatchQueue.main.async {
+                        self.delegate?.reloadData()
+                        self.router.dismiss(animated: true)
+                    }
                 }
             })
         case .dismiss:

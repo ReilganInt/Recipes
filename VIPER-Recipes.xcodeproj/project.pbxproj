@@ -663,6 +663,62 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		8434EB93240FB23800DACA2C /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C7682409044A00C3052B /* SavesWireframe.swift */,
+				84C2C7612409044A00C3052B /* SavesWireframeError.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		8434EB94240FB24400DACA2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C75F2409044A00C3052B /* SavesRoute.swift */,
+				84C2C75D2409044A00C3052B /* SavesRouter.swift */,
+				84C2C75E2409044A00C3052B /* SavesRouterDependencies.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		8434EB95240FB24B00DACA2C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C75B2409044A00C3052B /* SavesAction.swift */,
+				84C2C7642409044A00C3052B /* SavesDelegateProtocol.swift */,
+				84C2C7652409044A00C3052B /* SavesEvent.swift */,
+				84C2C75C2409044A00C3052B /* SavesPresenter.swift */,
+				84C2C7622409044A00C3052B /* SavesPresenterDependencies.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		8434EB96240FB25100DACA2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C7662409044A00C3052B /* SavesView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8434EB97240FB25500DACA2C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C7602409044A00C3052B /* SavesViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8434EB98240FB25C00DACA2C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				84C2C7632409044A00C3052B /* SavesInteractor.swift */,
+				84C2C75A2409044A00C3052B /* SavesInteractorDependencies.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
 		8478B04B23FEBAA800E17A9C /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,21 +808,13 @@
 		84C2C759240902D700C3052B /* Saves_refactor */ = {
 			isa = PBXGroup;
 			children = (
-				84C2C75B2409044A00C3052B /* SavesAction.swift */,
-				84C2C7642409044A00C3052B /* SavesDelegateProtocol.swift */,
-				84C2C7652409044A00C3052B /* SavesEvent.swift */,
-				84C2C7632409044A00C3052B /* SavesInteractor.swift */,
-				84C2C75A2409044A00C3052B /* SavesInteractorDependencies.swift */,
-				84C2C75C2409044A00C3052B /* SavesPresenter.swift */,
-				84C2C7622409044A00C3052B /* SavesPresenterDependencies.swift */,
 				84C2C7672409044A00C3052B /* SavesProtocol.swift */,
-				84C2C75F2409044A00C3052B /* SavesRoute.swift */,
-				84C2C75D2409044A00C3052B /* SavesRouter.swift */,
-				84C2C75E2409044A00C3052B /* SavesRouterDependencies.swift */,
-				84C2C7662409044A00C3052B /* SavesView.swift */,
-				84C2C7602409044A00C3052B /* SavesViewController.swift */,
-				84C2C7682409044A00C3052B /* SavesWireframe.swift */,
-				84C2C7612409044A00C3052B /* SavesWireframeError.swift */,
+				8434EB98240FB25C00DACA2C /* Interactor */,
+				8434EB95240FB24B00DACA2C /* Presenter */,
+				8434EB94240FB24400DACA2C /* Router */,
+				8434EB96240FB25100DACA2C /* View */,
+				8434EB97240FB25500DACA2C /* ViewController */,
+				8434EB93240FB23800DACA2C /* Wireframe */,
 			);
 			path = Saves_refactor;
 			sourceTree = "<group>";

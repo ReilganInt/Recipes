@@ -58,6 +58,7 @@ final class LoginView: UIView {
     override func didMoveToWindow() {
            super.didMoveToWindow()
            setupConstraints()
+        
     }
 }
 

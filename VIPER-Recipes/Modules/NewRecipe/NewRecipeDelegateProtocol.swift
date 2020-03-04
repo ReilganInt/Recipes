@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NewRecipeDelegateProtocol: class {
-    
+   func reloadData()
 }

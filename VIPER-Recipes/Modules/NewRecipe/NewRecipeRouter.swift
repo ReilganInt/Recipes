@@ -32,6 +32,7 @@ extension NewRecipeRouter: NewRecipeRouterProtocol {
     }
 
     func dismiss(animated: Bool) {
-		viewController?.dismiss(animated: animated, completion: nil)
+            self.viewController?.dismiss(animated: animated, completion: nil)
+		
 	}
 }

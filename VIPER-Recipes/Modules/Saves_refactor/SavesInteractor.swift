@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SavesInteractorProtocol {
-
+    func getAllRecipes(comletionHandler: @escaping (Result<[Recipe], Error>) -> ())
 }
 
 final class SavesInteractor {
@@ -17,10 +17,22 @@ final class SavesInteractor {
     
     init(dependencies: SavesInteractorDependenciesProtocol) {
         self.dependencies = dependencies
-        CGFloat.random(in: <#T##Range<CGFloat>#>)
     }
 }
 
 extension SavesInteractor: SavesInteractorProtocol {
+    func getAllRecipes(comletionHandler: @escaping (Result<[Recipe], Error>) -> ()) {
+        DataCoordinator.getAllRecipes() { result in
+            switch result {
+            case .failure(let error):
+                comletionHandler(.failure(error))
+            case .success(let recipes):
+                comletionHandler(.success(recipes))
+            }
+        }
+    }
+    
+
+    
 	
 }

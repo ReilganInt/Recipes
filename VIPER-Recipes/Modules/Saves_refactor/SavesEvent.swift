@@ -10,4 +10,5 @@ import UIKit
 
 enum SavesEvent {
     case viewDidLoad
+    case reloadData
 }

@@ -36,14 +36,31 @@ final class SavesPresenter {
 extension SavesPresenter: SavesPresenterProtocol {
     func didReceiveEvent(_ event: SavesEvent) {
         switch event {
-            case .viewDidLoad:
-                debugPrint("viewDidLoad")
+        case .viewDidLoad:
+            interactor.getAllRecipes() { result in
+                switch result {
+                case .failure(let error):
+                    print(error.localizedDescription)
+                case .success(let recipes):
+                    self.view?.reloadData(data: recipes)
+                }
+            }
+        case .reloadData:
+            interactor.getAllRecipes() { result in
+                switch result {
+                case .failure(let error):
+                    print(error.localizedDescription)
+                case .success(let recipes):
+                    self.view?.reloadData(data: recipes)
+                }
+            }
         }
     }
-
+    
     func didTriggerAction(_ action: SavesAction) {
         switch action {
-            default: ()
+        case .newRecipe:
+            router.navigate(toRoute: .newRecipe)
         }
     }
 }

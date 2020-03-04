@@ -9,5 +9,5 @@
 import UIKit
 
 enum SavesAction {
-    
+    case newRecipe
 }

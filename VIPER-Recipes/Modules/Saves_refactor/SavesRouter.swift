@@ -15,10 +15,10 @@ protocol SavesRouterProtocol {
 
 final class SavesRouter {
     private let dependencies: SavesRouterDependenciesProtocol
-    private weak var viewController: UIViewController?
+    private weak var viewController: SavesViewController?
 
     init(dependencies: SavesRouterDependenciesProtocol,
-    	 viewController: UIViewController?) {
+    	 viewController: SavesViewController?) {
         self.dependencies = dependencies
         self.viewController = viewController
     }
@@ -27,7 +27,11 @@ final class SavesRouter {
 extension SavesRouter: SavesRouterProtocol {
 	func navigate(toRoute route: SavesRoute) {
         switch route {
-            default: ()
+        case .newRecipe:
+            let vc = NewRecipeWireframe.makeViewController(delegate: viewController)
+            let nc = UINavigationController(rootViewController: vc)
+            nc.modalPresentationStyle = .overFullScreen
+            viewController?.present(nc, animated: true, completion: nil)
         }
     }
 
